@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0A0A0B"/>
+  <circle cx="210" cy="340" r="68" stroke="#FF6B35" stroke-width="8" fill="#1A1A1B"/>
+  <circle cx="590" cy="340" r="68" stroke="#FF6B35" stroke-width="8" fill="#1A1A1B"/>
+  <path d="M210 340 L300 290 L400 270 L500 280 L590 340" stroke="#F7931E" stroke-width="6" fill="none"/>
+  <rect x="340" y="200" width="180" height="70" rx="12" fill="#1A1A1B" stroke="#FF6B35" stroke-width="4"/>
+  <path d="M340 220 L320 180 L360 160 L400 170" stroke="#F7931E" stroke-width="4" fill="none"/>
+  <text x="400" y="100" text-anchor="middle" fill="#FF6B35" font-family="Arial,sans-serif" font-size="28" font-weight="bold">TOURING</text>
+</svg>

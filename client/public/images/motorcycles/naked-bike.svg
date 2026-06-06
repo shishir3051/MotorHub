@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0A0A0B"/>
+  <circle cx="215" cy="345" r="64" stroke="#FF6B35" stroke-width="8" fill="#1A1A1B"/>
+  <circle cx="575" cy="345" r="64" stroke="#FF6B35" stroke-width="8" fill="#1A1A1B"/>
+  <path d="M215 345 L295 300 L390 270 L480 285 L575 345" stroke="#F7931E" stroke-width="6" fill="none"/>
+  <path d="M390 270 L420 190 L460 165 L500 185 L470 255" stroke="#FF6B35" stroke-width="5" fill="#1A1A1B"/>
+  <rect x="360" y="220" width="80" height="35" rx="6" fill="#2A2A2B" stroke="#FF6B35" stroke-width="3"/>
+  <text x="400" y="95" text-anchor="middle" fill="#FF6B35" font-family="Arial,sans-serif" font-size="26" font-weight="bold">NAKED BIKE</text>
+</svg>

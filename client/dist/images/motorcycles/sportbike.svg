@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0A0A0B"/>
+  <circle cx="200" cy="350" r="65" stroke="#FF6B35" stroke-width="8" fill="#1A1A1B"/>
+  <circle cx="600" cy="350" r="65" stroke="#FF6B35" stroke-width="8" fill="#1A1A1B"/>
+  <path d="M200 350 L280 300 L380 250 L500 240 L600 350" stroke="#F7931E" stroke-width="6" fill="none"/>
+  <path d="M380 250 L420 160 L480 130 L520 150 L500 220 L420 250" stroke="#FF6B35" stroke-width="5" fill="#1A1A1B"/>
+  <path d="M480 130 L560 110 L600 140" stroke="#F7931E" stroke-width="4" fill="none"/>
+  <text x="400" y="90" text-anchor="middle" fill="#FF6B35" font-family="Arial,sans-serif" font-size="28" font-weight="bold">SPORTBIKE</text>
+</svg>
