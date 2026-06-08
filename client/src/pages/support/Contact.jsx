@@ -54,7 +54,7 @@ export default function Contact() {
           ))}
 
           <div className="p-4 bg-dark-card border border-dark-border rounded-lg text-sm text-dark-muted">
-            <strong className="text-white block mb-1">Business Hours</strong>
+            <strong className="text-dark-text block mb-1">Business Hours</strong>
             Mon – Fri: 9:00 AM – 7:00 PM<br />
             Sat: 10:00 AM – 5:00 PM<br />
             Sun: Closed

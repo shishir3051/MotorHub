@@ -39,6 +39,9 @@ export default function Products() {
       setLoading(true);
       try {
         const params = new URLSearchParams();
+        if (!filters.category) {
+          params.append('excludeCategory', 'accessories');
+        }
         Object.keys(filters).forEach((key) => {
           if (filters[key]) params.append(key, filters[key]);
         });
@@ -81,7 +84,7 @@ export default function Products() {
   };
 
   return (
-    <div className="min-h-screen bg-dark-bg text-white font-sans">
+    <div className="min-h-screen bg-dark-bg text-dark-text font-sans">
       <div className="border-b border-dark-border bg-dark-card/50 backdrop-blur-sm sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <motion.div
@@ -151,7 +154,7 @@ export default function Products() {
                       value={filters.search}
                       onChange={(e) => handleFilterChange('search', e.target.value)}
                       placeholder="Search by name..."
-                      className="w-full pl-10 pr-4 py-2.5 bg-dark-bg border border-dark-border rounded-lg focus:border-accent-primary focus:ring-1 focus:ring-accent-primary outline-none transition-all text-sm placeholder-gray-600"
+                      className="w-full !pl-10 pr-4 py-2.5 bg-dark-bg border border-dark-border rounded-lg focus:border-accent-primary focus:ring-1 focus:ring-accent-primary outline-none transition-all text-sm placeholder-gray-600"
                     />
                     <FiSearch className="absolute left-3 top-3 text-dark-muted" />
                   </div>
@@ -175,7 +178,7 @@ export default function Products() {
                             <div className="w-1.5 h-1.5 bg-dark-bg rounded-full opacity-0 peer-checked:opacity-100" />
                           </div>
                         </div>
-                        <span className={`text-sm transition-colors ${filters.category === cat.value ? 'text-accent-primary font-medium' : 'text-gray-300 group-hover:text-white'}`}>
+                        <span className={`text-sm transition-colors ${filters.category === cat.value ? 'text-accent-primary font-medium' : 'text-gray-300 group-hover:text-dark-text'}`}>
                           {cat.label}
                         </span>
                       </label>

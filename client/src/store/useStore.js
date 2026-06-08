@@ -15,6 +15,13 @@ export const useStore = create((set, get) => ({
   sessionContext: 'customer',
   hasAdminSession: Boolean(getSession('admin')?.token),
   hasCustomerSession: Boolean(getSession('customer')?.token),
+  theme: localStorage.getItem('motorhub-theme') || 'dark',
+
+  toggleTheme: () => set((state) => {
+    const newTheme = state.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('motorhub-theme', newTheme);
+    return { theme: newTheme };
+  }),
 
   addToCart: (motorcycle) => set((state) => {
     const existing = state.cart.find((item) => item._id === motorcycle._id);

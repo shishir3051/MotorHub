@@ -7,10 +7,14 @@ const router = express.Router();
 // Get all motorcycles (with filtering, search, pagination)
 router.get('/', async (req, res) => {
   try {
-    const { category, brand, minPrice, maxPrice, search, featured, page = 1, limit } = req.query;
+    const { category, excludeCategory, brand, minPrice, maxPrice, search, featured, page = 1, limit } = req.query;
     const filter = {};
 
-    if (category) filter.category = category;
+    if (category) {
+      filter.category = category;
+    } else if (excludeCategory) {
+      filter.category = { $ne: excludeCategory };
+    }
     if (featured === 'true') filter.featured = true;
     if (brand) filter.brand = brand;
     if (minPrice || maxPrice) {

@@ -11,33 +11,23 @@ export default function Terms() {
         </p>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Use of Service</h2>
-          <p>
-            You must be at least 18 years old and hold a valid motorcycle license to purchase vehicles.
-            You agree to provide accurate account and payment information.
+          <h2 className="text-lg font-bold text-dark-text mb-2">Use of Service</h2>
+          <p className="text-dark-muted mb-4 leading-relaxed">
+            You must be at least 18 years old to purchase a motorcycle. By using this site, you warrant that you are of legal age and have the capacity to enter into a binding contract.
           </p>
-        </section>
 
-        <section>
-          <h2 className="text-lg font-bold text-white mb-2">Orders &amp; Pricing</h2>
-          <p>
-            All prices are listed in USD. We reserve the right to correct pricing errors. An order is confirmed
-            only after payment is successfully processed.
+          <h2 className="text-lg font-bold text-dark-text mb-2">Orders & Pricing</h2>
+          <p className="text-dark-muted mb-4 leading-relaxed">
+            All prices are subject to change without notice. We reserve the right to refuse or cancel any order for any reason, including limitations on quantities available for purchase or errors in product or pricing information.
           </p>
-        </section>
 
-        <section>
-          <h2 className="text-lg font-bold text-white mb-2">Limitation of Liability</h2>
-          <p>
-            MotorHub is not liable for indirect, incidental, or consequential damages arising from use of our
-            services. Our total liability is limited to the amount paid for the product in question.
+          <h2 className="text-lg font-bold text-dark-text mb-2">Limitation of Liability</h2>
+          <p className="text-dark-muted mb-4 leading-relaxed">
+            MotorHub shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses.
           </p>
-        </section>
 
-        <section>
-          <h2 className="text-lg font-bold text-white mb-2">Governing Law</h2>
-          <p>
-            These terms are governed by the laws of the State of Texas, United States.
+          <h2 className="text-lg font-bold text-dark-text mb-2">Governing Law</h2>
+          <p className="text-dark-muted mb-6 leading-relaxed"> by the laws of the State of Texas, United States.
           </p>
         </section>
       </div>

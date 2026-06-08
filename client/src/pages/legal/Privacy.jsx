@@ -11,7 +11,7 @@ export default function Privacy() {
         </p>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Information We Collect</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">Information We Collect</h2>
           <ul className="list-disc list-inside space-y-1">
             <li>Account details: name, email, phone, and address</li>
             <li>Order and payment information</li>
@@ -21,7 +21,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">How We Use Your Data</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">How We Use Your Data</h2>
           <ul className="list-disc list-inside space-y-1">
             <li>Process orders and deliver motorcycles</li>
             <li>Provide customer support</li>
@@ -31,7 +31,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Data Security</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">Data Security</h2>
           <p>
             We use industry-standard encryption and secure servers to protect your data. Passwords are hashed
             and never stored in plain text.
@@ -39,7 +39,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Your Rights</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">Your Rights</h2>
           <p>
             You may request access, correction, or deletion of your personal data by contacting support@motorhub.com.
           </p>

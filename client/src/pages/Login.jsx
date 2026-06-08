@@ -1,20 +1,25 @@
 // client/src/pages/Login.jsx
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { hasSession } from '../utils/session';
 import { motion } from 'framer-motion';
 import axiosInstance from '../api/axiosInstance';
 import { useStore } from '../store/useStore';
+import ResetPassword from './ResetPassword';
 
-export default function Login({ context = 'customer' }) {
+export default function Login() {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { setAuth } = useStore();
-  const isAdmin = context === 'admin';
+  const resetToken = searchParams.get('resetToken');
 
   useEffect(() => {
-    if (isAdmin && hasSession('admin')) navigate('/admin');
-    if (!isAdmin && hasSession('customer')) navigate('/dashboard');
-  }, [isAdmin, navigate]);
+    if (hasSession('customer') && !resetToken) navigate('/dashboard');
+  }, [navigate, resetToken]);
+
+  if (resetToken) {
+    return <ResetPassword token={resetToken} />;
+  }
 
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
@@ -33,17 +38,11 @@ export default function Login({ context = 'customer' }) {
       const response = await axiosInstance.post('/users/login', formData);
       const { user, token } = response.data;
 
-      if (isAdmin && user.role !== 'admin') {
-        setError('This account does not have admin access.');
-        setLoading(false);
-        return;
-      }
-
-      setAuth(context, user, token);
-
-      if (isAdmin) {
+      if (user.role === 'admin') {
+        setAuth('admin', user, token);
         navigate('/admin');
       } else {
+        setAuth('customer', user, token);
         navigate('/');
       }
     } catch (err) {
@@ -61,14 +60,8 @@ export default function Login({ context = 'customer' }) {
         className="w-full max-w-md"
       >
         <div className="bg-dark-card border border-dark-border rounded-lg p-8">
-          <h1 className="text-4xl font-bold mb-2">
-            {isAdmin ? 'Admin Sign In' : 'Welcome Back'}
-          </h1>
-          <p className="text-dark-muted mb-8">
-            {isAdmin
-              ? 'Sign in to manage motorcycles and inventory'
-              : 'Sign in to your customer account'}
-          </p>
+          <h1 className="text-4xl font-bold mb-2">Welcome Back</h1>
+          <p className="text-dark-muted mb-8">Sign in to your customer account</p>
 
           {error && (
             <div className="mb-4 p-4 bg-red-500/20 border border-red-500 text-red-500 rounded-lg">
@@ -86,15 +79,25 @@ export default function Login({ context = 'customer' }) {
               required
               className="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-lg focus:border-accent-primary outline-none"
             />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={formData.password}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-lg focus:border-accent-primary outline-none"
-            />
+            <div>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 bg-dark-bg border border-dark-border rounded-lg focus:border-accent-primary outline-none"
+              />
+              <div className="flex justify-end mt-2">
+                <Link
+                  to="/forgot-password"
+                  className="text-sm text-accent-primary hover:text-accent-secondary transition"
+                >
+                  Forgot Password?
+                </Link>
+              </div>
+            </div>
 
             <button
               type="submit"
@@ -106,28 +109,10 @@ export default function Login({ context = 'customer' }) {
           </form>
 
           <p className="text-center text-dark-muted mt-6">
-            {isAdmin ? (
-              <>
-                <Link to="/login" className="text-accent-primary hover:text-accent-secondary transition">
-                  Customer login
-                </Link>
-                {' · '}
-                <Link to="/" className="text-dark-muted hover:text-white transition">
-                  Back to store
-                </Link>
-              </>
-            ) : (
-              <>
-                Don&apos;t have an account?{' '}
-                <Link to="/register" className="text-accent-primary hover:text-accent-secondary transition">
-                  Sign up
-                </Link>
-                {'. '}
-                <Link to="/admin/login" className="text-dark-muted hover:text-accent-primary transition">
-                  Admin login
-                </Link>
-              </>
-            )}
+            Don&apos;t have an account?{' '}
+            <Link to="/register" className="text-accent-primary hover:text-accent-secondary transition">
+              Sign up
+            </Link>
           </p>
         </div>
       </motion.div>

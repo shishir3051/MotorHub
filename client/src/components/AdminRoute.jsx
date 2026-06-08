@@ -7,7 +7,7 @@ export default function AdminRoute({ children }) {
   const { user, sessionContext } = useStore();
 
   if (!hasSession('admin')) {
-    return <Navigate to="/admin/login" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   if (sessionContext === 'admin' && !user) {
@@ -19,7 +19,7 @@ export default function AdminRoute({ children }) {
   }
 
   if (user?.role !== 'admin') {
-    return <Navigate to="/admin/login" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   return children;

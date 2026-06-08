@@ -1,13 +1,21 @@
 // client/src/pages/Checkout.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { FiLock, FiCreditCard, FiMapPin, FiUser } from 'react-icons/fi';
 import axiosInstance from '../api/axiosInstance';
 import { useStore } from '../store/useStore';
 
 export default function Checkout() {
   const navigate = useNavigate();
-  const { cart, user, clearCart } = useStore();
+  const { cart, user, clearCart, hasCustomerSession } = useStore();
+
+  // Auth guard — redirect to login if not signed in
+  useEffect(() => {
+    if (!hasCustomerSession) {
+      navigate('/login?redirect=/checkout', { replace: true });
+    }
+  }, [hasCustomerSession, navigate]);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     firstName: user?.firstName || '',
@@ -65,16 +73,21 @@ export default function Checkout() {
     }
   };
 
+  if (!hasCustomerSession) return null;
+
   return (
     <div className="min-h-screen bg-dark-bg py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl font-bold mb-12"
+          className="mb-12"
         >
-          Checkout
-        </motion.h1>
+          <h1 className="text-5xl font-bold mb-2">Checkout</h1>
+          <p className="text-dark-muted text-sm flex items-center gap-1.5">
+            <FiLock size={13} /> Secure, encrypted checkout
+          </p>
+        </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Checkout Form */}
@@ -83,11 +96,11 @@ export default function Checkout() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               onSubmit={handleSubmit}
-              className="bg-dark-card border border-dark-border rounded-lg p-8"
+              className="bg-dark-card border border-dark-border rounded-2xl p-8 space-y-8"
             >
               {/* Personal Information */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-6">Personal Information</h2>
+              <div>
+                <h2 className="text-xl font-bold mb-5 flex items-center gap-2"><FiUser className="text-accent-primary" /> Personal Information</h2>
                 <div className="grid md:grid-cols-2 gap-4">
                   <input
                     type="text"
@@ -129,8 +142,8 @@ export default function Checkout() {
               </div>
 
               {/* Shipping Address */}
-              <div className="mb-8 pb-8 border-b border-dark-border">
-                <h2 className="text-2xl font-bold mb-6">Shipping Address</h2>
+              <div className="pb-8 border-b border-dark-border">
+                <h2 className="text-xl font-bold mb-5 flex items-center gap-2"><FiMapPin className="text-accent-primary" /> Shipping Address</h2>
                 <input
                   type="text"
                   name="street"
@@ -183,8 +196,8 @@ export default function Checkout() {
               </div>
 
               {/* Payment Method */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-6">Payment Method</h2>
+              <div>
+                <h2 className="text-xl font-bold mb-5 flex items-center gap-2"><FiCreditCard className="text-accent-primary" /> Payment Method</h2>
                 <div className="space-y-3">
                   {['credit-card', 'debit-card', 'bank-transfer', 'paypal'].map(method => (
                     <label key={method} className="flex items-center gap-3 cursor-pointer">
@@ -205,9 +218,13 @@ export default function Checkout() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full px-6 py-4 bg-accent-primary hover:bg-accent-dark disabled:opacity-50 text-dark-bg font-bold rounded-lg transition"
+                className="w-full px-6 py-4 bg-accent-primary hover:bg-accent-secondary disabled:opacity-50 text-dark-bg font-bold rounded-xl transition-all hover:shadow-accent-glow flex items-center justify-center gap-2"
               >
-                {loading ? 'Processing...' : 'Place Order'}
+                {loading ? (
+                  <><div className="w-4 h-4 border-2 border-dark-bg border-t-transparent rounded-full animate-spin" /> Processing...</>
+                ) : (
+                  <><FiLock size={16} /> Place Order Securely</>
+                )}
               </button>
             </motion.form>
           </div>
@@ -216,7 +233,7 @@ export default function Checkout() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-dark-card border border-dark-border rounded-lg p-6 h-fit sticky top-24"
+            className="bg-dark-card border border-dark-border rounded-2xl p-6 h-fit sticky top-24"
           >
             <h2 className="text-2xl font-bold mb-6">Order Summary</h2>
 

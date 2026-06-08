@@ -11,16 +11,16 @@ export default function Cookies() {
         </p>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Types of Cookies We Use</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">Types of Cookies We Use</h2>
           <ul className="list-disc list-inside space-y-2">
-            <li><strong className="text-white">Essential:</strong> Required for login, cart, and checkout functionality.</li>
-            <li><strong className="text-white">Analytics:</strong> Help us understand how visitors use our site.</li>
-            <li><strong className="text-white">Preference:</strong> Remember your settings and filter choices.</li>
+            <li><strong className="text-dark-text">Essential:</strong> Required for login, cart, and checkout functionality.</li>
+            <li><strong className="text-dark-text">Analytics:</strong> Help us understand how visitors use our site.</li>
+            <li><strong className="text-dark-text">Preference:</strong> Remember your settings and filter choices.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Managing Cookies</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">Managing Cookies</h2>
           <p>
             You can disable cookies in your browser settings. Note that disabling essential cookies may
             prevent you from logging in or completing purchases.
@@ -28,7 +28,7 @@ export default function Cookies() {
         </section>
 
         <section>
-          <h2 className="text-lg font-bold text-white mb-2">Session Storage</h2>
+          <h2 className="text-lg font-bold text-dark-text mb-2">Session Storage</h2>
           <p>
             We use browser session storage to keep your login and cart separate for admin and customer
             accounts within the same browser.

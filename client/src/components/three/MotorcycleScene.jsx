@@ -14,6 +14,8 @@ import {
 import { useInView } from 'react-intersection-observer';
 import * as THREE from 'three';
 
+import { useStore } from '../../store/useStore';
+
 function OrbitalRings() {
   const ring1 = useRef();
   const ring2 = useRef();
@@ -62,7 +64,7 @@ function EnergyCore() {
   );
 }
 
-function DetailedMotorcycle() {
+function DetailedMotorcycle({ theme }) {
   const bike = useRef();
   const wheel1 = useRef();
   const wheel2 = useRef();
@@ -75,7 +77,7 @@ function DetailedMotorcycle() {
   });
 
   const metal = useMemo(() => ({ color: '#FF6B35', metalness: 0.95, roughness: 0.15 }), []);
-  const dark = useMemo(() => ({ color: '#1A1A1B', metalness: 0.7, roughness: 0.35 }), []);
+  const dark = useMemo(() => ({ color: theme === 'light' ? '#71717A' : '#1A1A1B', metalness: 0.7, roughness: 0.35 }), [theme]);
   const chrome = useMemo(() => ({ color: '#F7931E', metalness: 1, roughness: 0.05 }), []);
 
   return (
@@ -106,7 +108,7 @@ function DetailedMotorcycle() {
   );
 }
 
-function SceneContent({ immersive = false, active = true }) {
+function SceneContent({ immersive = false, active = true, theme }) {
   const root = useRef();
   const { mouse } = useThree();
 
@@ -124,12 +126,13 @@ function SceneContent({ immersive = false, active = true }) {
 
   const starCount = immersive ? 2000 : 1200;
   const sparkleCount = immersive ? 50 : 30;
+  const bgColor = theme === 'light' ? '#F4F4F5' : '#0A0A0B';
 
   return (
     <>
-      <color attach="background" args={['#0A0A0B']} />
-      <fog attach="fog" args={['#0A0A0B', 8, 22]} />
-      <ambientLight intensity={0.25} />
+      <color attach="background" args={[bgColor]} />
+      <fog attach="fog" args={[bgColor, 8, 22]} />
+      <ambientLight intensity={theme === 'light' ? 0.8 : 0.25} />
       <directionalLight position={[8, 8, 5]} intensity={1.4} color="#FF6B35" />
       <pointLight position={[0, 2, 3]} intensity={1} color="#FF6B35" distance={15} />
 
@@ -139,7 +142,7 @@ function SceneContent({ immersive = false, active = true }) {
       <group ref={root}>
         <OrbitalRings />
         <EnergyCore />
-        <DetailedMotorcycle />
+        <DetailedMotorcycle theme={theme} />
       </group>
     </>
   );
@@ -148,10 +151,13 @@ function SceneContent({ immersive = false, active = true }) {
 export default function MotorcycleScene({ immersive = false, className = '' }) {
   const { ref, inView } = useInView({ threshold: 0.05, rootMargin: '100px' });
   const [mounted, setMounted] = useState(false);
+  const { theme } = useStore();
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const bgColor = theme === 'light' ? '#F4F4F5' : '#0A0A0B';
 
   return (
     <div ref={ref} className={`w-full h-full ${className}`}>
@@ -161,9 +167,9 @@ export default function MotorcycleScene({ immersive = false, className = '' }) {
           dpr={[1, 1.5]}
           frameloop={inView ? 'always' : 'demand'}
           gl={{ antialias: true, alpha: !immersive, powerPreference: 'high-performance' }}
-          style={{ background: immersive ? '#0A0A0B' : 'transparent' }}
+          style={{ background: immersive ? bgColor : 'transparent' }}
         >
-          <SceneContent immersive={immersive} active={inView} />
+          <SceneContent immersive={immersive} active={inView} theme={theme} />
         </Canvas>
       )}
     </div>

@@ -14,10 +14,21 @@ const userSchema = new mongoose.Schema({
     country: String
   },
   profileImage: String,
-  role: { type: String, enum: ['customer', 'admin'], default: 'customer' },
-  wishlist: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Motorcycle' }],
-  createdAt: { type: Date, default: Date.now },
-  updatedAt: { type: Date, default: Date.now }
+  role: {
+    type: String,
+    enum: ['customer', 'admin'],
+    default: 'customer'
+  },
+  isVerified: {
+    type: Boolean,
+    default: false,
+  },
+  verificationToken: String,
+  resetPasswordToken: String,
+  resetPasswordExpire: Date,
+  wishlist: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Motorcycle' }]
+}, {
+  timestamps: true
 });
 
 export default mongoose.model('User', userSchema);

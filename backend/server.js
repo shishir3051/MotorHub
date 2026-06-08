@@ -6,6 +6,7 @@ import motorcycleRoutes from './routes/motorcycles.js';
 import userRoutes from './routes/users.js';
 import orderRoutes from './routes/orders.js';
 import authRoutes from './routes/auth.js';
+import subscribersRouter from './routes/subscribers.js';
 import contactRoutes from './routes/contact.js';
 
 dotenv.config();
@@ -22,16 +23,22 @@ app.use('/api/motorcycles', motorcycleRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/subscribers', subscribersRouter);
 app.use('/api/contact', contactRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('Connected to MongoDB');
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
+    // Only listen if not running in Vercel serverless environment
+    if (process.env.NODE_ENV !== 'production') {
+      app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+      });
+    }
   })
   .catch((error) => {
     console.error('MongoDB connection error:', error);
   });
+
+export default app;

@@ -12,7 +12,7 @@ export default function FeaturedProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axiosInstance.get('/motorcycles?featured=true&limit=6');
+        const response = await axiosInstance.get('/motorcycles?featured=true&excludeCategory=accessories&limit=6');
         setProducts(response.data.motorcycles);
       } catch (error) {
         console.error('Error fetching products:', error);

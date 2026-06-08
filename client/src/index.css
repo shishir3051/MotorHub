@@ -1,7 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+:root {
+  --color-bg: 10 10 11;
+  --color-card: 26 26 27;
+  --color-border: 42 42 43;
+  --color-text: 255 255 255;
+  --color-muted: 138 138 139;
+}
+
+.light {
+  --color-bg: 244 244 245;
+  --color-card: 255 255 255;
+  --color-border: 228 228 231;
+  --color-text: 9 9 11;
+  --color-muted: 113 113 122;
+}
+
 body {
   @apply bg-dark-bg text-dark-text font-sans;
 }
@@ -29,53 +45,102 @@ html {
 a, button, input, select, textarea {
   @apply transition-colors duration-200;
 }
- 
-/* Custom Scrollbar */
+
+/* ── Custom Scrollbar ── */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
- 
+
 ::-webkit-scrollbar-track {
-  @apply bg-dark-card;
+  @apply bg-dark-bg;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  @apply bg-dark-border rounded hover:bg-accent-primary;
+  @apply bg-dark-border rounded-full;
 }
- 
-/* Animations */
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-primary;
+}
+
+/* ── Glassmorphism utility ── */
+.glass {
+  background: rgba(26, 26, 27, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── Gradient border utility ── */
+.gradient-border {
+  position: relative;
+}
+.gradient-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,107,53,0.4), rgba(247,147,30,0.1), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* ── Animations ── */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
- 
+
 @keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
 }
- 
-.animate-fadeIn {
-  animation: fadeIn 0.3s ease-in-out;
+
+@keyframes cartBounce {
+  0%, 100% { transform: scale(1); }
+  40%       { transform: scale(1.45); }
+  70%       { transform: scale(0.85); }
 }
- 
-.animate-slideUp {
-  animation: slideUp 0.5s ease-out;
+
+@keyframes toastSlide {
+  from { transform: translateX(110%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
 }
- 
-/* Focus styles */
+
+@keyframes heartPop {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.4); }
+}
+
+.animate-fadeIn   { animation: fadeIn    0.3s ease-in-out; }
+.animate-slideUp  { animation: slideUp   0.5s ease-out; }
+.animate-cartBounce { animation: cartBounce 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+.animate-toastSlide { animation: toastSlide 0.35s cubic-bezier(0.22, 1, 0.36, 1); }
+.animate-heartPop   { animation: heartPop  0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+
+/* ── Scale utilities not in default Tailwind ── */
+.hover\:scale-108:hover { transform: scale(1.08); }
+
+/* ── Focus styles ── */
 button:focus-visible,
 input:focus-visible,
 a:focus-visible {
-  @apply outline-none ring-2 ring-accent-primary;
+  @apply outline-none ring-2 ring-accent-primary ring-offset-1 ring-offset-dark-bg;
+}
+
+/* ── Form input base style ── */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  @apply bg-dark-bg border border-dark-border rounded-xl px-4 py-3
+         focus:border-accent-primary focus:ring-1 focus:ring-accent-primary
+         outline-none transition-all placeholder-gray-600 text-sm w-full;
 }
