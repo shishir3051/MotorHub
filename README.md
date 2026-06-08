@@ -22,15 +22,15 @@ MotoCop is a modern, high-performance, full-stack E-Commerce application for a p
 To run this project locally, you will need to start both the backend server and the frontend client.
 
 ### 1. Backend Setup
-1. Open a terminal and navigate to the `backend` folder:
+1. Open a terminal and navigate to the `api` folder:
    ```bash
-   cd backend
+   cd api
    ```
 2. Install dependencies:
    ```bash
    npm install
    ```
-3. Create a `.env` file in the `backend` directory and add your MongoDB connection string and JWT secret:
+3. Create a `.env` file in the `api` directory and add your MongoDB connection string and JWT secret:
    ```env
    PORT=5000
    MONGODB_URI=your_mongodb_connection_string
