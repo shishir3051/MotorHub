@@ -26,6 +26,11 @@ app.use('/api/auth', authRoutes);
 app.use('/api/subscribers', subscribersRouter);
 app.use('/api/contact', contactRoutes);
 
+// Root Route
+app.get('/', (req, res) => {
+  res.send('MotoCop API is running successfully!');
+});
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
