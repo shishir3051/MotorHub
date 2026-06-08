@@ -28,7 +28,8 @@ router.post('/register', async (req, res) => {
     await user.save();
 
     // Construct the verification URL
-    const verifyUrl = `http://localhost:3001/verify/${verificationToken}`;
+    const clientUrl = process.env.FRONTEND_URL || 'https://motor-hub-three.vercel.app';
+    const verifyUrl = `${clientUrl}/verify/${verificationToken}`;
     
     // HTML message
     const message = `
@@ -114,7 +115,8 @@ router.post('/forgot-password', async (req, res) => {
     user.resetPasswordExpire = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    const resetUrl = `http://localhost:3000/login?resetToken=${resetToken}`;
+    const clientUrl = process.env.FRONTEND_URL || 'https://motor-hub-three.vercel.app';
+    const resetUrl = `${clientUrl}/login?resetToken=${resetToken}`;
 
     const message = `
       <h2>MotorHub Password Reset</h2>
