@@ -3,6 +3,19 @@ import Order from '../models/Order.js';
 
 const router = express.Router();
 
+// Get all orders (Admin)
+router.get('/', async (req, res) => {
+  try {
+    const orders = await Order.find()
+      .populate('user', 'firstName lastName email')
+      .populate('motorcycles.motorcycle')
+      .sort({ createdAt: -1 });
+    res.json(orders);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Create order
 router.post('/', async (req, res) => {
   try {

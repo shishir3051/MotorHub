@@ -3,23 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: 10 10 11;
-  --color-card: 26 26 27;
-  --color-border: 42 42 43;
-  --color-text: 255 255 255;
-  --color-muted: 138 138 139;
+  --color-bg: 13 13 13; /* #0D0D0D */
+  --color-card: 26 26 26; /* #1A1A1A */
+  --color-border: 42 42 43; /* #2A2A2B */
+  --color-text: 242 242 242; /* #F2F2F2 */
+  --color-muted: 136 136 136; /* #888888 */
 }
 
+/* VORAX Moto is exclusively Dark Mode */
 .light {
-  --color-bg: 244 244 245;
-  --color-card: 255 255 255;
-  --color-border: 228 228 231;
-  --color-text: 9 9 11;
-  --color-muted: 113 113 122;
+  display: inherit;
 }
 
 body {
-  @apply bg-dark-bg text-dark-text font-sans;
+  @apply bg-[#0D0D0D] text-[#F2F2F2] font-sans;
 }
 
 html {
@@ -82,7 +79,7 @@ a, button, input, select, textarea {
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(255,107,53,0.4), rgba(247,147,30,0.1), transparent);
+  background: linear-gradient(135deg, rgba(255,60,0,0.6), rgba(211,47,47,0.1), transparent);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;

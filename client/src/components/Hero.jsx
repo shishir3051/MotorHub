@@ -1,114 +1,104 @@
-// client/src/components/Hero.jsx
-import React, { Suspense, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { motion } from 'framer-motion';
-import gsap from 'gsap';
-import { initGsap } from '../utils/gsapInit';
-import MotorcycleScene from './three/MotorcycleScene';
-import ScrollReveal from './ScrollReveal';
+import { Link } from 'react-router-dom';
+import { FiPlay, FiChevronDown } from 'react-icons/fi';
 
 export default function Hero() {
-  const sectionRef = useRef(null);
-  const contentRef = useRef(null);
-  const fadeOverlayRef = useRef(null);
-
-  useEffect(() => {
-    initGsap();
-    const section = sectionRef.current;
-    const content = contentRef.current;
-    const fadeOverlay = fadeOverlayRef.current;
-    if (!section || !content || !fadeOverlay) return;
-
-    gsap.set([content, fadeOverlay], { force3D: true });
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: section,
-        start: 'top top',
-        end: '60% top',
-        scrub: 0.6,
-      },
-    });
-
-    // Only fade overlay + content — never CSS-transform the WebGL canvas (causes jank)
-    tl.to(fadeOverlay, { opacity: 1, ease: 'none' }, 0);
-    tl.to(content, { y: -24, opacity: 0, ease: 'none' }, 0);
-
-    return () => {
-      tl.scrollTrigger?.kill();
-      tl.kill();
-    };
-  }, []);
-
   return (
-    <section ref={sectionRef} className="relative bg-dark-bg overflow-hidden min-h-screen">
-      <div className="absolute inset-0 z-0 gpu-layer">
-        <Suspense fallback={null}>
-          <MotorcycleScene immersive className="w-full h-full" />
-        </Suspense>
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-bg/40 via-dark-bg/20 to-dark-bg pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-r from-dark-bg via-transparent to-dark-bg/80 pointer-events-none" />
-        <div
-          ref={fadeOverlayRef}
-          className="absolute inset-0 bg-dark-bg pointer-events-none opacity-0"
+    <div className="relative w-full h-screen bg-[#0D0D0D] overflow-hidden flex flex-col justify-center">
+      {/* Background Texture/Image */}
+      <div className="absolute inset-0 z-0 opacity-40">
+        <img 
+          src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=2070&auto=format&fit=crop" 
+          alt="Dark textured background" 
+          className="w-full h-full object-cover grayscale"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D] via-[#0D0D0D]/80 to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full min-h-screen flex flex-col justify-center py-24">
-        <div ref={contentRef} className="max-w-2xl gpu-layer">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <span className="inline-block text-accent-primary font-semibold text-sm mb-4 tracking-widest uppercase">
-              <span className="mr-2">01</span>
-              <span className="inline-block w-2 h-2 bg-accent-primary rounded-full align-middle animate-pulse" />
-            </span>
-
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.05] font-display">
-              Powering
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-primary via-accent-secondary to-accent-primary bg-[length:200%_auto] animate-shimmer">
-                Every Ride
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
+          {/* Left Content */}
+          <div className="flex flex-col justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <span className="inline-block text-[#FF3C00] font-display font-bold uppercase tracking-[0.3em] text-sm mb-6">
+                2025 FLAGSHIP MODEL
               </span>
-            </h1>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-dark-muted max-w-xl mb-10 leading-relaxed">
-              Premium motorcycles engineered for performance. Explore our immersive collection
-              of cruisers, sportbikes, and adventure machines.
-            </p>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-5xl sm:text-6xl lg:text-8xl font-display font-bold uppercase text-[#F2F2F2] leading-[0.9] mb-6 tracking-tight"
+            >
+              THE MACHINE <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F2F2F2] to-[#888888]">THAT REWRITES</span> <br />
+              ROADS
+            </motion.h1>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="text-[#888888] text-lg sm:text-xl font-medium max-w-md mb-10"
+            >
+              1200cc parallel twin. 148 BHP. Zero compromise.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
               <Link
                 to="/shop"
-                className="px-8 py-4 bg-accent-primary text-dark-bg font-semibold rounded-lg hover:shadow-lg hover:shadow-accent-primary/40 transition-shadow hover:scale-[1.02] flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-[#FF3C00] text-white font-display font-bold uppercase tracking-widest text-sm hover:bg-[#D32F2F] transition-colors text-center"
               >
-                Explore Collection <span>→</span>
+                Explore Models
               </Link>
-              <a
-                href="#featured"
-                className="px-8 py-4 border border-dark-border hover:border-accent-primary rounded-lg font-semibold transition-colors text-center backdrop-blur-sm bg-dark-bg/30"
+              <button
+                className="px-8 py-4 border border-[#2A2A2B] text-[#F2F2F2] font-display font-bold uppercase tracking-widest text-sm hover:border-[#F2F2F2] transition-colors flex items-center justify-center gap-3"
               >
-                View Featured <span>→</span>
-              </a>
-            </div>
+                <FiPlay size={18} />
+                Watch Film
+              </button>
+            </motion.div>
+          </div>
+
+          {/* Right Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.5, type: 'spring', stiffness: 50 }}
+            className="hidden lg:block relative"
+          >
+            <div className="absolute inset-0 bg-[#FF3C00] blur-[120px] opacity-20 rounded-full" />
+            <img 
+              src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=2070&auto=format&fit=crop" 
+              alt="VORAX Flagship Motorcycle" 
+              className="relative z-10 w-full h-auto object-contain transform -rotate-3 hover:rotate-0 transition-transform duration-700 drop-shadow-2xl grayscale contrast-125"
+            />
           </motion.div>
         </div>
-
-        <ScrollReveal className="grid grid-cols-3 gap-8 mt-auto pt-20 border-t border-dark-border/50">
-          {[
-            { val: '100+', label: 'Premium Models' },
-            { val: '15K+', label: 'Happy Riders' },
-            { val: '100%', label: 'Satisfaction' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-accent-primary mb-2">{stat.val}</div>
-              <p className="text-dark-muted text-sm">{stat.label}</p>
-            </div>
-          ))}
-        </ScrollReveal>
       </div>
-    </section>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-[#888888] animate-bounce"
+      >
+        <span className="text-[10px] font-display uppercase tracking-widest mb-2">Scroll</span>
+        <FiChevronDown size={20} />
+      </motion.div>
+    </div>
   );
 }

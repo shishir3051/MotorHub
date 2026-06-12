@@ -8,6 +8,14 @@ import orderRoutes from './routes/orders.js';
 import authRoutes from './routes/auth.js';
 import subscribersRouter from './routes/subscribers.js';
 import contactRoutes from './routes/contact.js';
+import appointmentRoutes from './routes/appointments.js';
+import dealerRoutes from './routes/dealers.js';
+import uploadRoutes from './routes/upload.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
@@ -25,6 +33,12 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/subscribers', subscribersRouter);
 app.use('/api/contact', contactRoutes);
+app.use('/api/appointments', appointmentRoutes);
+app.use('/api/dealers', dealerRoutes);
+app.use('/api/upload', uploadRoutes);
+
+// Static folders
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Root Route
 app.get('/', (req, res) => {

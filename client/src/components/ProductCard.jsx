@@ -1,11 +1,9 @@
-// client/src/components/ProductCard.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiShoppingCart, FiHeart, FiCheck, FiAlertTriangle } from 'react-icons/fi';
+import { FiShoppingCart, FiCheck, FiHeart } from 'react-icons/fi';
 import { useStore } from '../store/useStore';
 import { formatCategory } from '../constants/categories';
-import TiltCard from './TiltCard';
 import AuthModal from './AuthModal';
 import { useToast } from './Toast';
 
@@ -41,129 +39,89 @@ export default function ProductCard({ motorcycle }) {
     });
   };
 
-  const isLowStock = motorcycle.stock > 0 && motorcycle.stock < 5;
   const isOutOfStock = motorcycle.stock === 0;
 
   return (
     <>
-      <TiltCard className="h-full">
-        <Link
-          to={`/motorcycle/${motorcycle._id}`}
-          className="group relative bg-dark-card border border-dark-border rounded-2xl overflow-hidden flex flex-col h-full transition-all duration-300 hover:border-accent-primary/40 hover:shadow-card-hover"
-        >
-          {/* Image Area */}
-          <div className="relative h-64 flex-shrink-0 bg-dark-bg overflow-hidden">
-            {motorcycle.images[0] ? (
-              <img
-                src={motorcycle.images[0].url}
-                alt={motorcycle.name}
-                className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
-                style={{ '--tw-scale-x': 'var(--hover-scale, 1)', '--tw-scale-y': 'var(--hover-scale, 1)' }}
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center text-dark-muted text-sm">
-                No Image
-              </div>
-            )}
-
-            {/* Gradient overlay at bottom of image */}
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-card via-dark-card/20 to-transparent" />
-
-            {/* Top badges */}
-            <div className="absolute top-3 left-3 right-3 flex justify-between items-start">
-              <div className="flex flex-col gap-1.5">
-                {motorcycle.featured && (
-                  <span className="bg-accent-primary text-dark-bg px-2.5 py-1 rounded-lg text-xs font-bold shadow-accent-glow">
-                    ⚡ Featured
-                  </span>
-                )}
-                {isLowStock && (
-                  <span className="bg-yellow-500/90 text-dark-bg px-2.5 py-1 rounded-lg text-xs font-bold flex items-center gap-1">
-                    <FiAlertTriangle size={11} /> Low Stock
-                  </span>
-                )}
-                {isOutOfStock && (
-                  <span className="bg-red-500/80 text-white px-2.5 py-1 rounded-lg text-xs font-bold">
-                    Sold Out
-                  </span>
-                )}
-              </div>
-
-              {/* Wishlist button */}
-              <button
-                onClick={handleWishlist}
-                className={`
-                  p-2 rounded-xl backdrop-blur-sm border transition-all duration-200
-                  ${wishlisted
-                    ? 'bg-red-500/20 border-red-500/40 text-red-400 animate-heartPop'
-                    : 'bg-dark-bg/60 border-dark-border/60 text-dark-muted hover:text-red-400 hover:border-red-500/40 hover:bg-red-500/10'
-                  }
-                `}
-                aria-label="Add to wishlist"
-              >
-                <FiHeart size={15} className={wishlisted ? 'fill-current' : ''} />
-              </button>
+      <Link
+        to={`/motorcycle/${motorcycle._id}`}
+        className="group relative bg-[#1A1A1A] border border-[#2A2A2B] overflow-hidden flex flex-col transition-all duration-300 hover:border-[#FF3C00] hover:shadow-[0_0_20px_rgba(255,60,0,0.15)] h-full"
+      >
+        {/* Image Area - Edge to Edge */}
+        <div className="relative aspect-[4/3] bg-[#0D0D0D] overflow-hidden">
+          {motorcycle.images && motorcycle.images[0] ? (
+            <img
+              src={motorcycle.images[0].url}
+              alt={motorcycle.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-[#888888] text-sm font-display uppercase tracking-widest">
+              No Image
             </div>
+          )}
 
-            {/* Price overlaid on image bottom */}
-            <div className="absolute bottom-3 left-4">
-              <span className="text-2xl font-black text-dark-text drop-shadow-lg">
-                ${motorcycle.price.toLocaleString()}
-              </span>
-            </div>
-          </div>
-
-          {/* Card Body */}
-          <div className="p-5 flex flex-col flex-1">
-            {/* Brand + Category */}
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-xs font-bold text-accent-primary uppercase tracking-wider truncate mr-2">
-                {motorcycle.brand}
-              </span>
-              <span className="text-xs text-dark-muted bg-dark-bg/80 px-2.5 py-1 rounded-full flex-shrink-0 border border-dark-border/60">
+          {/* Top badges & Wishlist */}
+          <div className="absolute top-4 left-4 right-4 flex justify-between items-start z-10">
+            <div className="flex flex-col gap-2">
+              <span className="bg-[#FF3C00] text-white px-3 py-1 text-xs font-display font-bold uppercase tracking-widest">
                 {formatCategory(motorcycle.category)}
               </span>
+              {isOutOfStock && (
+                <span className="bg-[#1A1A1A] border border-[#2A2A2B] text-white px-3 py-1 text-xs font-display font-bold uppercase tracking-widest">
+                  Sold Out
+                </span>
+              )}
             </div>
 
-            {/* Name */}
-            <h3 className="text-base font-bold mb-1.5 group-hover:text-accent-primary transition-colors duration-200 line-clamp-2 leading-snug min-h-[2.6rem]">
+            <button
+              onClick={handleWishlist}
+              className={`p-2 bg-[#1A1A1A]/80 backdrop-blur-sm border border-[#2A2A2B] hover:border-[#FF3C00] transition-colors ${wishlisted ? 'text-[#FF3C00]' : 'text-[#888888]'}`}
+              aria-label="Wishlist"
+            >
+              <FiHeart size={18} className={wishlisted ? 'fill-current' : ''} />
+            </button>
+          </div>
+          
+          {/* Engine Spec Overlay (if available in desc or mock it) */}
+          {motorcycle.specifications && motorcycle.specifications.engine && (
+            <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <p className="text-white text-xs font-display uppercase tracking-widest drop-shadow-md">
+                {motorcycle.specifications.engine} | {motorcycle.specifications.power || 'N/A BHP'}
+              </p>
+            </div>
+          )}
+          
+          {/* Gradient Overlay for Text Visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
+
+        {/* Card Body */}
+        <div className="p-5 flex flex-col flex-1 relative bg-[#1A1A1A] z-20">
+          <div className="flex justify-between items-start mb-2">
+            <h3 className="text-xl font-display font-bold uppercase tracking-wider text-[#F2F2F2] leading-tight">
               {motorcycle.name}
             </h3>
+            <span className="text-lg font-display font-bold text-[#FF3C00]">
+              ${motorcycle.price.toLocaleString()}
+            </span>
+          </div>
 
-            {/* Rating */}
-            {motorcycle.rating > 0 && (
-              <div className="flex items-center gap-1.5 mb-3">
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span
-                      key={star}
-                      className={`text-sm ${star <= Math.round(motorcycle.rating) ? 'text-accent-secondary' : 'text-dark-border'}`}
-                    >
-                      ★
-                    </span>
-                  ))}
-                </div>
-                <span className="text-xs text-dark-muted">{motorcycle.rating.toFixed(1)}</span>
-              </div>
-            )}
+          <p className="text-[#888888] text-sm line-clamp-2 mt-2 flex-1">
+            {motorcycle.description}
+          </p>
 
-            {/* Description */}
-            <p className="text-dark-muted text-xs leading-relaxed line-clamp-2 flex-1 mb-4">
-              {motorcycle.description}
-            </p>
-
-            {/* Add to Cart Button */}
+          {/* Slide-up CTA Button */}
+          <div className="mt-6 overflow-hidden h-[44px]">
             <button
               onClick={handleAddToCart}
               disabled={isOutOfStock}
-              className={`
-                w-full py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2
-                transition-all duration-200
+              className={`w-full h-full flex items-center justify-center gap-2 font-display font-bold uppercase tracking-widest text-sm transition-all duration-300 transform translate-y-0 md:translate-y-full group-hover:translate-y-0
                 ${isOutOfStock
-                  ? 'bg-dark-bg border border-dark-border text-dark-muted cursor-not-allowed'
+                  ? 'bg-[#2A2A2B] text-[#888888] cursor-not-allowed'
                   : added
-                    ? 'bg-green-500 text-white shadow-lg'
-                    : 'bg-accent-primary hover:bg-accent-secondary text-dark-bg hover:shadow-accent-glow hover:scale-[1.02] active:scale-[0.98]'
+                    ? 'bg-[#F2F2F2] text-[#0D0D0D]'
+                    : 'bg-transparent border border-[#FF3C00] text-[#FF3C00] hover:bg-[#FF3C00] hover:text-white'
                 }
               `}
             >
@@ -171,19 +129,19 @@ export default function ProductCard({ motorcycle }) {
                 {added ? (
                   <motion.span
                     key="added"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
                     className="flex items-center gap-2"
                   >
-                    <FiCheck size={16} /> Added!
+                    <FiCheck size={16} /> Added
                   </motion.span>
                 ) : (
                   <motion.span
                     key="add"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
                     className="flex items-center gap-2"
                   >
                     <FiShoppingCart size={16} />
@@ -193,10 +151,9 @@ export default function ProductCard({ motorcycle }) {
               </AnimatePresence>
             </button>
           </div>
-        </Link>
-      </TiltCard>
+        </div>
+      </Link>
 
-      {/* Auth Modal */}
       <AuthModal
         isOpen={authModalOpen}
         onClose={() => setAuthModalOpen(false)}

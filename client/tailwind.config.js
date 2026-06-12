@@ -1,4 +1,3 @@
-
 export default {
   content: [
     "./index.html",
@@ -8,21 +7,21 @@ export default {
     extend: {
       colors: {
         dark: {
-          bg: 'rgb(var(--color-bg) / <alpha-value>)',
-          card: 'rgb(var(--color-card) / <alpha-value>)',
-          border: 'rgb(var(--color-border) / <alpha-value>)',
-          text: 'rgb(var(--color-text) / <alpha-value>)',
-          muted: 'rgb(var(--color-muted) / <alpha-value>)'
+          bg: '#0D0D0D',
+          card: '#1A1A1A',
+          border: '#2A2A2B',
+          text: '#F2F2F2',
+          muted: '#888888'
         },
         accent: {
-          primary: '#FF6B35',
-          secondary: '#F7931E',
-          dark: '#D32F2F'
+          primary: '#FF3C00',
+          secondary: '#D32F2F',
+          dark: '#B71C1C'
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Poppins', 'system-ui', 'sans-serif']
+        display: ['"Barlow Condensed"', 'system-ui', 'sans-serif']
       },
       animation: {
         fadeIn: 'fadeIn 0.6s ease-in-out',
@@ -67,13 +66,13 @@ export default {
         },
         navGlow: {
           '0%': { boxShadow: 'none' },
-          '100%': { boxShadow: '0 1px 0 0 rgba(255,107,53,0.15), 0 4px 20px 0 rgba(0,0,0,0.6)' }
+          '100%': { boxShadow: '0 1px 0 0 rgba(255,60,0,0.15), 0 4px 20px 0 rgba(0,0,0,0.6)' }
         }
       },
       boxShadow: {
         'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.5)',
-        'accent-glow': '0 0 20px rgba(255, 107, 53, 0.35)',
-        'card-hover': '0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,107,53,0.15)',
+        'accent-glow': '0 0 20px rgba(255, 60, 0, 0.35)',
+        'card-hover': '0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,60,0,0.5)',
       },
       backdropBlur: {
         xs: '2px',

@@ -31,7 +31,7 @@ const motorcycleSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ['cruiser', 'sportbike', 'touring', 'dirt-bike', 'adventure', 'naked-bike', 'accessories'],
+    enum: ['cruiser', 'sportbike', 'touring', 'dirt-bike', 'adventure', 'naked-bike', 'accessories', 'gear'],
     required: true
   },
   images: [{

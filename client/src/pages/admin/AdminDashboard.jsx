@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import axiosInstance from '../../api/axiosInstance';
 import { CATEGORIES } from '../../constants/categories';
-import { FiPackage, FiStar, FiTrendingUp, FiPlus, FiArrowRight } from 'react-icons/fi';
+import { FiPackage, FiStar, FiTrendingUp, FiPlus, FiArrowRight, FiShoppingBag, FiUsers } from 'react-icons/fi';
 import { useStore } from '../../store/useStore';
 
 export default function AdminDashboard() {
@@ -133,7 +133,7 @@ export default function AdminDashboard() {
         {/* Quick Actions / Future Component */}
         <motion.div variants={itemVariants} className="bg-dark-card border border-dark-border rounded-3xl p-8 shadow-sm flex flex-col">
           <h2 className="text-xl font-black tracking-tight mb-6">Quick Actions</h2>
-          <div className="grid grid-cols-2 gap-4 flex-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
              <Link to="/admin/bikes" className="bg-dark-bg rounded-2xl p-6 border border-dark-border hover:border-accent-primary transition-all group flex flex-col justify-between">
                <div className="w-12 h-12 rounded-xl bg-accent-primary/10 flex items-center justify-center mb-4">
                  <FiPackage className="text-accent-primary" size={24} />
@@ -143,14 +143,24 @@ export default function AdminDashboard() {
                  <p className="text-xs text-dark-muted mt-1">Edit, delete, or update bikes</p>
                </div>
              </Link>
-             <div className="bg-dark-bg/50 rounded-2xl p-6 border border-dark-border border-dashed flex flex-col justify-center items-center text-center opacity-50 cursor-not-allowed">
-                <h3 className="font-bold text-dark-muted">Orders & Sales</h3>
-                <p className="text-[10px] text-dark-muted uppercase tracking-widest mt-2 bg-dark-border px-2 py-1 rounded-md inline-block">Coming Soon</p>
-             </div>
-             <div className="bg-dark-bg/50 rounded-2xl p-6 border border-dark-border border-dashed flex flex-col justify-center items-center text-center opacity-50 cursor-not-allowed">
-                <h3 className="font-bold text-dark-muted">User Management</h3>
-                <p className="text-[10px] text-dark-muted uppercase tracking-widest mt-2 bg-dark-border px-2 py-1 rounded-md inline-block">Coming Soon</p>
-             </div>
+             <Link to="/admin/orders" className="bg-dark-bg rounded-2xl p-6 border border-dark-border hover:border-accent-primary transition-all group flex flex-col justify-between">
+               <div className="w-12 h-12 rounded-xl bg-accent-secondary/10 flex items-center justify-center mb-4">
+                 <FiShoppingBag className="text-accent-secondary" size={24} />
+               </div>
+               <div>
+                 <h3 className="font-bold group-hover:text-accent-primary transition-colors">Orders & Sales</h3>
+                 <p className="text-xs text-dark-muted mt-1">Manage customer orders</p>
+               </div>
+             </Link>
+             <Link to="/admin/users" className="bg-dark-bg rounded-2xl p-6 border border-dark-border hover:border-accent-primary transition-all group flex flex-col justify-between">
+               <div className="w-12 h-12 rounded-xl bg-accent-primary/10 flex items-center justify-center mb-4">
+                 <FiUsers className="text-accent-primary" size={24} />
+               </div>
+               <div>
+                 <h3 className="font-bold group-hover:text-accent-primary transition-colors">User Management</h3>
+                 <p className="text-xs text-dark-muted mt-1">Manage admin and customer accounts</p>
+               </div>
+             </Link>
           </div>
         </motion.div>
 

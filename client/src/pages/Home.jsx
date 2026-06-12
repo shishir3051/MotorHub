@@ -1,21 +1,26 @@
-// client/src/pages/Home.jsx
 import React from 'react';
 import Hero from '../components/Hero';
-import CategoryShowcase from '../components/CategoryShowcase';
-import ScrollScene3D from '../components/three/ScrollScene3D';
+import StatsBar from '../components/StatsBar';
 import FeaturedProducts from '../components/FeaturedProducts';
-import Services from '../components/Services';
-import Newsletter from '../components/Newsletter';
+import BrandStory from '../components/BrandStory';
+import TechHighlight from '../components/TechHighlight';
+import FeaturedModelDeepDive from '../components/FeaturedModelDeepDive';
+import GearAndApparel from '../components/GearAndApparel';
+import Testimonials from '../components/Testimonials';
+import DealerCTA from '../components/DealerCTA';
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#0D0D0D] min-h-screen">
       <Hero />
-      <CategoryShowcase />
-      <ScrollScene3D />
+      <StatsBar />
       <FeaturedProducts />
-      <Services />
-      <Newsletter />
+      <BrandStory />
+      <TechHighlight />
+      <FeaturedModelDeepDive />
+      <GearAndApparel />
+      <Testimonials />
+      <DealerCTA />
     </div>
   );
 }

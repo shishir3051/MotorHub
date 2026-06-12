@@ -1,0 +1,2622 @@
+[
+  {
+    "id": 1,
+    "name": "Honda CBR1000RR-R Fireblade SP",
+    "brand": "Honda",
+    "model": "CBR1000RR-R Fireblade SP",
+    "type": "Sport",
+    "engine_cc": 999,
+    "price": 28999,
+    "description": "A track-focused superbike packed with MotoGP-derived aerodynamics, electronic suspension, and blistering inline-four power."
+  },
+  {
+    "id": 2,
+    "name": "Honda CBR600RR",
+    "brand": "Honda",
+    "model": "CBR600RR",
+    "type": "Sport",
+    "engine_cc": 599,
+    "price": 12199,
+    "description": "The quintessential high-revving supersport machine, legendary for its precise racetrack handling and razor-sharp balance."
+  },
+  {
+    "id": 3,
+    "name": "Honda CBR500R",
+    "brand": "Honda",
+    "model": "CBR500R",
+    "type": "Sport",
+    "engine_cc": 471,
+    "price": 7299,
+    "description": "An aggressive, fully-faired sportbike body wrapped around a friendly parallel-twin engine perfect for everyday street riding."
+  },
+  {
+    "id": 4,
+    "name": "Honda CBR300R",
+    "brand": "Honda",
+    "model": "CBR300R",
+    "type": "Sport",
+    "engine_cc": 286,
+    "price": 4899,
+    "description": "A lightweight, single-cylinder entry sportbike that offers nimble urban handling and an approachable learning platform."
+  },
+  {
+    "id": 5,
+    "name": "Honda CRF1100L Africa Twin",
+    "brand": "Honda",
+    "model": "CRF1100L Africa Twin",
+    "type": "Adventure",
+    "engine_cc": 1084,
+    "price": 14499,
+    "description": "A flagship global-touring adventure bike built to conquer punishing off-road trails and long highway miles with equal ease."
+  },
+  {
+    "id": 6,
+    "name": "Honda XL750 Transalp",
+    "brand": "Honda",
+    "model": "XL750 Transalp",
+    "type": "Adventure",
+    "engine_cc": 755,
+    "price": 9999,
+    "description": "A versatile mid-weight adventure tourer that revives a legendary nameplate with a punchy twin-cylinder engine."
+  },
+  {
+    "id": 7,
+    "name": "Honda NC750X",
+    "brand": "Honda",
+    "model": "NC750X",
+    "type": "Adventure",
+    "engine_cc": 745,
+    "price": 9399,
+    "description": "An ultra-practical commuter featuring a unique integrated storage trunk and a low-revving, highly fuel-efficient engine."
+  },
+  {
+    "id": 8,
+    "name": "Honda CB500X",
+    "brand": "Honda",
+    "model": "CB500X",
+    "type": "Adventure",
+    "engine_cc": 471,
+    "price": 7299,
+    "description": "An approachable, adventure-styled tourer built for versatile daily commuting and light weekend dirt-road exploring."
+  },
+  {
+    "id": 9,
+    "name": "Honda CRF450RL",
+    "brand": "Honda",
+    "model": "CRF450RL",
+    "type": "Dual Sport",
+    "engine_cc": 449,
+    "price": 9999,
+    "description": "A high-performance trail weapon based directly on Honda's motocross racers, fitted with lights and a license plate."
+  },
+  {
+    "id": 10,
+    "name": "Honda CRF300L",
+    "brand": "Honda",
+    "model": "CRF300L",
+    "type": "Dual Sport",
+    "engine_cc": 286,
+    "price": 5499,
+    "description": "One of the world's most popular dual-sports, celebrated for its lightweight frame, reliability, and easy-going nature on or off road."
+  },
+  {
+    "id": 11,
+    "name": "Honda CB1000R",
+    "brand": "Honda",
+    "model": "CB1000R",
+    "type": "Naked",
+    "engine_cc": 998,
+    "price": 12999,
+    "description": "Honda's 'Neo-Sports Café' flagship, blending muscular, minimalist retro styling with a powerful retuned superbike engine."
+  },
+  {
+    "id": 12,
+    "name": "Honda CB650R",
+    "brand": "Honda",
+    "model": "CB650R",
+    "type": "Naked",
+    "engine_cc": 649,
+    "price": 9399,
+    "description": "A smooth, screaming inline-four naked bike that offers a premium, modern-retro look and highly balanced street manners."
+  },
+  {
+    "id": 13,
+    "name": "Honda CB500F",
+    "brand": "Honda",
+    "model": "CB500F",
+    "type": "Naked",
+    "engine_cc": 471,
+    "price": 6799,
+    "description": "A street-fighter styled naked bike that delivers beginner-friendly twin-cylinder power and a comfortable, upright seating position."
+  },
+  {
+    "id": 14,
+    "name": "Honda CB300R",
+    "brand": "Honda",
+    "model": "CB300R",
+    "type": "Naked",
+    "engine_cc": 286,
+    "price": 5149,
+    "description": "An ultra-lightweight naked bike sporting cafe-racer styling cues, perfect for darting through dense city traffic."
+  },
+  {
+    "id": 15,
+    "name": "Honda Gold Wing Tour",
+    "brand": "Honda",
+    "model": "Gold Wing Tour",
+    "type": "Touring",
+    "engine_cc": 1833,
+    "price": 28500,
+    "description": "The absolute pinnacle of two-wheeled luxury touring, driven by a silky smooth six-cylinder engine and endless comfort features."
+  },
+  {
+    "id": 16,
+    "name": "Honda Rebel 1100",
+    "brand": "Honda",
+    "model": "Rebel 1100",
+    "type": "Cruiser",
+    "engine_cc": 1084,
+    "price": 9499,
+    "description": "A modern cruiser that pairs a low-slung aesthetic with a sporty parallel-twin engine and advanced electronic rider aids."
+  },
+  {
+    "id": 17,
+    "name": "Honda Rebel 500",
+    "brand": "Honda",
+    "model": "Rebel 500",
+    "type": "Cruiser",
+    "engine_cc": 471,
+    "price": 6499,
+    "description": "A highly customizable cruiser staple with a very low seat height, perfect for both newer riders and custom builders."
+  },
+  {
+    "id": 18,
+    "name": "Honda Rebel 300",
+    "brand": "Honda",
+    "model": "Rebel 300",
+    "type": "Cruiser",
+    "engine_cc": 286,
+    "price": 4799,
+    "description": "An incredibly approachable entry-level cruiser featuring an lightweight chassis and user-friendly single-cylinder engine."
+  },
+  {
+    "id": 19,
+    "name": "Honda Shadow Phantom",
+    "brand": "Honda",
+    "model": "Shadow Phantom",
+    "type": "Cruiser",
+    "engine_cc": 745,
+    "price": 8399,
+    "description": "A classic, bobber-inspired V-twin cruiser with blacked-out styling accents and a low-maintenance shaft drive."
+  },
+  {
+    "id": 20,
+    "name": "Honda Fury",
+    "brand": "Honda",
+    "model": "Fury",
+    "type": "Cruiser",
+    "engine_cc": 1312,
+    "price": 11499,
+    "description": "A radical, clean factory chopper with a long raked-out front end and a thumping 1312cc V-twin heart."
+  },
+  {
+    "id": 21,
+    "name": "Honda Grom",
+    "brand": "Honda",
+    "model": "Grom",
+    "type": "Minimoto",
+    "engine_cc": 124,
+    "price": 3599,
+    "description": "A worldwide cultural phenomenon; tiny, endlessly customizable, and designed for pure low-speed urban fun."
+  },
+  {
+    "id": 22,
+    "name": "Honda Monkey",
+    "brand": "Honda",
+    "model": "Monkey",
+    "type": "Minimoto",
+    "engine_cc": 124,
+    "price": 4299,
+    "description": "A nostalgic homage to the iconic 1960s mini bikes, updated with modern brakes, suspension, and fuel injection."
+  },
+  {
+    "id": 23,
+    "name": "Honda Super Cub C125",
+    "brand": "Honda",
+    "model": "Super Cub C125",
+    "type": "Scooter",
+    "engine_cc": 124,
+    "price": 3899,
+    "description": "The modern evolution of the highest-selling motor vehicle in human history, featuring a semi-automatic clutchless ride."
+  },
+  {
+    "id": 24,
+    "name": "Honda Trail 125",
+    "brand": "Honda",
+    "model": "Trail 125",
+    "type": "Minimoto",
+    "engine_cc": 124,
+    "price": 3999,
+    "description": "A ruggedized, outdoor-themed mini machine built with an upswept exhaust and snorkel intake for backcountry exploration."
+  },
+  {
+    "id": 25,
+    "name": "Honda ADV160",
+    "brand": "Honda",
+    "model": "ADV160",
+    "type": "Scooter",
+    "engine_cc": 157,
+    "price": 4499,
+    "description": "An adventure-styled commuter scooter with rugged tires and long-travel suspension to handle rough city pavement."
+  },
+  {
+    "id": 26,
+    "name": "Honda PCX",
+    "brand": "Honda",
+    "model": "PCX",
+    "type": "Scooter",
+    "engine_cc": 157,
+    "price": 4149,
+    "description": "A premium urban scooter combining sharp modern bodywork, excellent fuel economy, and handy under-seat storage space."
+  },
+  {
+    "id": 27,
+    "name": "Honda Ruckus",
+    "brand": "Honda",
+    "model": "Ruckus",
+    "type": "Scooter",
+    "engine_cc": 49,
+    "price": 2899,
+    "description": "A stripped-down minimalist scooter with an iconic dual-headlight tubular frame and a passionate underground custom culture."
+  },
+  {
+    "id": 28,
+    "name": "Honda Metropolitan",
+    "brand": "Honda",
+    "model": "Metropolitan",
+    "type": "Scooter",
+    "engine_cc": 49,
+    "price": 2699,
+    "description": "A charming, European-style retro scooter engineered for ultra-efficient neighborhood chores and short campus commutes."
+  },
+  {
+    "id": 29,
+    "name": "Honda XR650L",
+    "brand": "Honda",
+    "model": "XR650L",
+    "type": "Dual Sport",
+    "engine_cc": 644,
+    "price": 6999,
+    "description": "An unchanged, bulletproof, old-school dual sport powerhouse built around an air-cooled single-cylinder engine."
+  },
+  {
+    "id": 30,
+    "name": "Honda VFR800 Interceptor",
+    "brand": "Honda",
+    "model": "VFR800 Interceptor",
+    "type": "Sport Touring",
+    "engine_cc": 782,
+    "price": 10499,
+    "description": "A legendary sport tourer famous for its sophisticated V4 engine layout, VTEC variable valve timing, and signature exhaust note."
+  },
+  {
+    "id": 31,
+    "name": "Yamaha YZF-R1M",
+    "brand": "Yamaha",
+    "model": "YZF-R1M",
+    "type": "Sport",
+    "engine_cc": 998,
+    "price": 26999,
+    "description": "Yamaha's ultimate track-day weapon, boasting a crossplane engine, carbon fiber bodywork, and data-logging Öhlins electronic suspension."
+  },
+  {
+    "id": 32,
+    "name": "Yamaha YZF-R1",
+    "brand": "Yamaha",
+    "model": "YZF-R1",
+    "type": "Sport",
+    "engine_cc": 998,
+    "price": 17999,
+    "description": "A flagship superbike renowned for its distinctive, throaty crossplane inline-four engine note and elite racing pedigree."
+  },
+  {
+    "id": 33,
+    "name": "Yamaha YZF-R7",
+    "brand": "Yamaha",
+    "model": "YZF-R7",
+    "type": "Sport",
+    "engine_cc": 689,
+    "price": 9199,
+    "description": "A aggressive supersport body wrapped around a torque-rich parallel-twin engine, bridging track handling with street usability."
+  },
+  {
+    "id": 34,
+    "name": "Yamaha YZF-R3",
+    "brand": "Yamaha",
+    "model": "YZF-R3",
+    "type": "Sport",
+    "engine_cc": 321,
+    "price": 5499,
+    "description": "A high-revving, beginner-friendly sportbike that offers sharp looks and light, predictable handling for everyday street riding."
+  },
+  {
+    "id": 35,
+    "name": "Yamaha MT-10 SP",
+    "brand": "Yamaha",
+    "model": "MT-10 SP",
+    "type": "Naked",
+    "engine_cc": 998,
+    "price": 16999,
+    "description": "The hyper-naked king, featuring R1 superbike DNA, aggressive transformer looks, and top-shelf electronic semi-active suspension."
+  },
+  {
+    "id": 36,
+    "name": "Yamaha MT-10",
+    "brand": "Yamaha",
+    "model": "MT-10",
+    "type": "Naked",
+    "engine_cc": 998,
+    "price": 14199,
+    "description": "A stripped-down liter-class street fighter powered by a brutally torquey, crossplane-concept inline-four engine."
+  },
+  {
+    "id": 37,
+    "name": "Yamaha MT-09 SP",
+    "brand": "Yamaha",
+    "model": "MT-09 SP",
+    "type": "Naked",
+    "engine_cc": 890,
+    "price": 11499,
+    "description": "An upgraded three-cylinder street brawler fitted with premium suspension, cruise control, and dedicated track electronics."
+  },
+  {
+    "id": 38,
+    "name": "Yamaha MT-09",
+    "brand": "Yamaha",
+    "model": "MT-09",
+    "type": "Naked",
+    "engine_cc": 890,
+    "price": 9799,
+    "description": "Known as the 'Master of Torque', this triple-cylinder naked machine is famous for its wheelie-prone performance and agile handling."
+  },
+  {
+    "id": 39,
+    "name": "Yamaha MT-07",
+    "brand": "Yamaha",
+    "model": "MT-07",
+    "type": "Naked",
+    "engine_cc": 689,
+    "price": 8199,
+    "description": "A wildly popular mid-weight street fighter featuring a punchy CP2 twin engine celebrated for its endless low-end fun."
+  },
+  {
+    "id": 40,
+    "name": "Yamaha MT-03",
+    "brand": "Yamaha",
+    "model": "MT-03",
+    "type": "Naked",
+    "engine_cc": 321,
+    "price": 4999,
+    "description": "An entry-level naked street fighter offering light, nimble ergonomics and an approachable twin-cylinder powerband."
+  },
+  {
+    "id": 41,
+    "name": "Yamaha XSR900",
+    "brand": "Yamaha",
+    "model": "XSR900",
+    "type": "Heritage",
+    "engine_cc": 890,
+    "price": 10299,
+    "description": "An 80s racing-inspired sport heritage bike packed with modern electronics and a potent, characterful three-cylinder engine."
+  },
+  {
+    "id": 42,
+    "name": "Yamaha XSR700",
+    "brand": "Yamaha",
+    "model": "XSR700",
+    "type": "Heritage",
+    "engine_cc": 689,
+    "price": 8899,
+    "description": "A neo-retro cruiser-styled roadster combining timeless vintage aesthetics with reliable, punchy modern mechanicals."
+  },
+  {
+    "id": 43,
+    "name": "Yamaha Ténéré 700",
+    "brand": "Yamaha",
+    "model": "Ténéré 700",
+    "type": "Adventure",
+    "engine_cc": 689,
+    "price": 10799,
+    "description": "A minimalist, off-road biased adventure bike praised globally for its mechanical simplicity and rugged off-road poise."
+  },
+  {
+    "id": 44,
+    "name": "Yamaha Super Ténéré ES",
+    "brand": "Yamaha",
+    "model": "Super Ténéré ES",
+    "type": "Adventure",
+    "engine_cc": 1199,
+    "price": 16299,
+    "description": "A heavy-duty, shaft-driven transcontinental adventure tourer built for cross-country journeys with electronically adjustable suspension."
+  },
+  {
+    "id": 45,
+    "name": "Yamaha Tracer 9 GT+",
+    "brand": "Yamaha",
+    "model": "Tracer 9 GT+",
+    "type": "Sport Touring",
+    "engine_cc": 890,
+    "price": 14999,
+    "description": "A premium sport-touring machine outfitted with radar-linked adaptive cruise control, hard luggage, and semi-active suspension."
+  },
+  {
+    "id": 46,
+    "name": "Yamaha FJR1300ES",
+    "brand": "Yamaha",
+    "model": "FJR1300ES",
+    "type": "Sport Touring",
+    "engine_cc": 1298,
+    "price": 18299,
+    "description": "A legendary long-haul sport touring titan combining massive inline-four power, a shaft drive, and an electronically adjustable screen."
+  },
+  {
+    "id": 47,
+    "name": "Yamaha Bolt R-Spec",
+    "brand": "Yamaha",
+    "model": "Bolt R-Spec",
+    "type": "Cruiser",
+    "engine_cc": 942,
+    "price": 8899,
+    "description": "A modern, urban bobber-style cruiser featuring an air-cooled V-twin engine and performance piggyback rear shocks."
+  },
+  {
+    "id": 48,
+    "name": "Yamaha VMAX",
+    "brand": "Yamaha",
+    "model": "VMAX",
+    "type": "Cruiser",
+    "engine_cc": 1679,
+    "price": 17999,
+    "description": "A legendary muscle-cruiser icon that delivers staggering straight-line acceleration via a massive, roaring V4 engine."
+  },
+  {
+    "id": 49,
+    "name": "Yamaha WR450F",
+    "brand": "Yamaha",
+    "model": "WR450F",
+    "type": "Off-Road",
+    "engine_cc": 450,
+    "price": 9999,
+    "description": "A high-end enduro bike engineered for hard, technical trail riding with a wide-ratio transmission and competition-grade chassis."
+  },
+  {
+    "id": 50,
+    "name": "Yamaha WR250F",
+    "brand": "Yamaha",
+    "model": "WR250F",
+    "type": "Off-Road",
+    "engine_cc": 250,
+    "price": 8899,
+    "description": "A lightweight woods-racing machine that gives off-road riders highly precise handling and manageable, high-revving power."
+  },
+  {
+    "id": 51,
+    "name": "Yamaha YZ450F",
+    "brand": "Yamaha",
+    "model": "YZ450F",
+    "type": "Motocross",
+    "engine_cc": 450,
+    "price": 9899,
+    "description": "Yamaha's flagship motocross racer, featuring an advanced smartphone-tunable engine map and elite race track suspension."
+  },
+  {
+    "id": 52,
+    "name": "Yamaha YZ250F",
+    "brand": "Yamaha",
+    "model": "YZ250F",
+    "type": "Motocross",
+    "engine_cc": 249,
+    "price": 8899,
+    "description": "A championship-winning quarter-liter motocross weapon designed for top-tier agility and high-rpm competitive racing."
+  },
+  {
+    "id": 53,
+    "name": "Yamaha TT-R230",
+    "brand": "Yamaha",
+    "model": "TT-R230",
+    "type": "Off-Road",
+    "engine_cc": 223,
+    "price": 4499,
+    "description": "A low-maintenance, air-cooled play bike featuring a low seat height, perfect for recreational trail riders and families."
+  },
+  {
+    "id": 54,
+    "name": "Yamaha TW200",
+    "brand": "Yamaha",
+    "model": "TW200",
+    "type": "Dual Sport",
+    "engine_cc": 196,
+    "price": 4899,
+    "description": "The iconic dual sport 'fat-tire' tractor bike, legendary for its low seat height and unstoppable sand and mud traction."
+  },
+  {
+    "id": 55,
+    "name": "Yamaha XT250",
+    "brand": "Yamaha",
+    "model": "XT250",
+    "type": "Dual Sport",
+    "engine_cc": 249,
+    "price": 5399,
+    "description": "A reliable, low-slung commuter dual sport bike utilizing bulletproof fuel injection for trouble-free road or trail riding."
+  },
+  {
+    "id": 56,
+    "name": "Yamaha XMAX",
+    "brand": "Yamaha",
+    "model": "XMAX",
+    "type": "Scooter",
+    "engine_cc": 292,
+    "price": 6099,
+    "description": "A high-performance maxi-scooter offering highway capability, angular sports styling, and expansive under-seat helmet storage."
+  },
+  {
+    "id": 57,
+    "name": "Yamaha Zuma 125",
+    "brand": "Yamaha",
+    "model": "Zuma 125",
+    "type": "Scooter",
+    "engine_cc": 125,
+    "price": 3799,
+    "description": "A unique, tough-looking commuter scooter featuring rugged, knobby-style tires and aggressive, asymmetrical dual headlights."
+  },
+  {
+    "id": 58,
+    "name": "Yamaha TMAX",
+    "brand": "Yamaha",
+    "model": "TMAX",
+    "type": "Scooter",
+    "engine_cc": 562,
+    "price": 11499,
+    "description": "The ultimate sports maxi-scooter, delivering motorcycle-grade handling and massive twin-cylinder power in a step-through frame."
+  },
+  {
+    "id": 59,
+    "name": "Yamaha NMAX 155",
+    "brand": "Yamaha",
+    "model": "NMAX 155",
+    "type": "Scooter",
+    "engine_cc": 155,
+    "price": 4299,
+    "description": "A stylish, globally popular premium city commuter scooter with advanced variable valve actuation for punchy performance."
+  },
+  {
+    "id": 60,
+    "name": "Yamaha Aerox 155",
+    "brand": "Yamaha",
+    "model": "Aerox 155",
+    "type": "Scooter",
+    "engine_cc": 155,
+    "price": 4499,
+    "description": "A sportbike-inspired automatic scooter featuring aggressive lines and a chassis tailored for sharper urban cornering."
+  },
+  {
+    "id": 61,
+    "name": "Kawasaki Ninja H2R",
+    "brand": "Kawasaki",
+    "model": "Ninja H2R",
+    "type": "Sport",
+    "engine_cc": 998,
+    "price": 57500,
+    "description": "A track-only, closed-course hyperbike monster equipped with a supercharger and carbon wings producing over 300 horsepower."
+  },
+  {
+    "id": 62,
+    "name": "Kawasaki Ninja H2 SX SE",
+    "brand": "Kawasaki",
+    "model": "Ninja H2 SX SE",
+    "type": "Sport Touring",
+    "engine_cc": 998,
+    "price": 28000,
+    "description": "A premium, supercharged hyper-touring sportbike packed with luxury amenities and advanced highway radar technology."
+  },
+  {
+    "id": 63,
+    "name": "Kawasaki Ninja ZX-14R",
+    "brand": "Kawasaki",
+    "model": "Ninja ZX-14R",
+    "type": "Sport",
+    "engine_cc": 1441,
+    "price": 16599,
+    "description": "A legendary heavy-weight sportbike known as the king of the drag strip, offering massive, effortless torque across the rev range."
+  },
+  {
+    "id": 64,
+    "name": "Kawasaki Ninja ZX-10R",
+    "brand": "Kawasaki",
+    "model": "Ninja ZX-10R",
+    "type": "Sport",
+    "engine_cc": 998,
+    "price": 17399,
+    "description": "A multi-time World Superbike championship winner engineered for absolute track supremacy and electronic precision."
+  },
+  {
+    "id": 65,
+    "name": "Kawasaki Ninja ZX-6R",
+    "brand": "Kawasaki",
+    "model": "Ninja ZX-6R",
+    "type": "Sport",
+    "engine_cc": 636,
+    "price": 11399,
+    "description": "A traditional, high-revving inline-four supersport featuring a unique 636cc layout that provides enhanced low-end street torque."
+  },
+  {
+    "id": 66,
+    "name": "Kawasaki Ninja ZX-4RR",
+    "brand": "Kawasaki",
+    "model": "Ninja ZX-4RR",
+    "type": "Sport",
+    "engine_cc": 399,
+    "price": 9399,
+    "description": "A modern anomaly; a small-displacement, premium sub-400cc sportbike with an exotic, screaming 16,000 RPM inline-four engine."
+  },
+  {
+    "id": 67,
+    "name": "Kawasaki Ninja 1000SX",
+    "brand": "Kawasaki",
+    "model": "Ninja 1000SX",
+    "type": "Sport Touring",
+    "engine_cc": 1043,
+    "price": 13699,
+    "description": "A highly refined, comfortable sport-tourer offering effortless open-road power, hard bags, and a plush passenger seat."
+  },
+  {
+    "id": 68,
+    "name": "Kawasaki Ninja 650",
+    "brand": "Kawasaki",
+    "model": "Ninja 650",
+    "type": "Sport",
+    "engine_cc": 649,
+    "price": 8299,
+    "description": "A sleek, practical everyday sportbike featuring an upright riding position and a highly efficient, user-friendly parallel-twin."
+  },
+  {
+    "id": 69,
+    "name": "Kawasaki Ninja 500",
+    "brand": "Kawasaki",
+    "model": "Ninja 500",
+    "type": "Sport",
+    "engine_cc": 451,
+    "price": 5299,
+    "description": "The latest evolution of Kawasaki's beginner entry-class sportbike, packing a punchier engine and modern aggressive styling."
+  },
+  {
+    "id": 70,
+    "name": "Kawasaki Ninja 400",
+    "brand": "Kawasaki",
+    "model": "Ninja 400",
+    "type": "Sport",
+    "engine_cc": 399,
+    "price": 5299,
+    "description": "A highly praised lightweight sportbike benchmark, beloved by both novice street riders and advanced club racers."
+  },
+  {
+    "id": 71,
+    "name": "Kawasaki Z H2",
+    "brand": "Kawasaki",
+    "model": "Z H2",
+    "type": "Naked",
+    "engine_cc": 998,
+    "price": 18500,
+    "description": "The ultimate naked street fighter flagship, utilizing a supercharged inline-four engine for brutal, naked acceleration."
+  },
+  {
+    "id": 72,
+    "name": "Kawasaki Z900 SE",
+    "brand": "Kawasaki",
+    "model": "Z900 SE",
+    "type": "Naked",
+    "engine_cc": 948,
+    "price": 11299,
+    "description": "An upgraded version of the popular Z900 naked bike, enhanced with premium Öhlins rear suspension and high-end Brembo brakes."
+  },
+  {
+    "id": 73,
+    "name": "Kawasaki Z900",
+    "brand": "Kawasaki",
+    "model": "Z900",
+    "type": "Naked",
+    "engine_cc": 948,
+    "price": 9399,
+    "description": "A raw, heavy-hitting inline-four naked street fighter that offers incredible performance value and sharp Sugomi styling."
+  },
+  {
+    "id": 74,
+    "name": "Kawasaki Z650",
+    "brand": "Kawasaki",
+    "model": "Z650",
+    "type": "Naked",
+    "engine_cc": 649,
+    "price": 8149,
+    "description": "A highly agile, lightweight parallel-twin naked bike built for simple daily commuting and responsive canyon carving."
+  },
+  {
+    "id": 75,
+    "name": "Kawasaki Z500",
+    "brand": "Kawasaki",
+    "model": "Z500",
+    "type": "Naked",
+    "engine_cc": 451,
+    "price": 5599,
+    "description": "A lightweight, beginner-friendly modern street fighter that replaces the Z400 with improved torque and modern tech."
+  },
+  {
+    "id": 76,
+    "name": "Kawasaki Z400",
+    "brand": "Kawasaki",
+    "model": "Z400",
+    "type": "Naked",
+    "engine_cc": 399,
+    "price": 5399,
+    "description": "A compact, upright entry-level naked street fighter renowned for its feather-light feel and peppy powerplant."
+  },
+  {
+    "id": 77,
+    "name": "Kawasaki Z125 Pro",
+    "brand": "Kawasaki",
+    "model": "Z125 Pro",
+    "type": "Minimoto",
+    "engine_cc": 125,
+    "price": 3399,
+    "description": "A pocket-sized minimoto packed with aggressive naked styling, perfect for neighborhood exploration and pit-bike racing."
+  },
+  {
+    "id": 78,
+    "name": "Kawasaki Z900RS",
+    "brand": "Kawasaki",
+    "model": "Z900RS",
+    "type": "Heritage",
+    "engine_cc": 948,
+    "price": 12149,
+    "description": "A gorgeous retro tribute to the classic 1970s Z1, backed by smooth, high-performing modern engine engineering."
+  },
+  {
+    "id": 79,
+    "name": "Kawasaki W800",
+    "brand": "Kawasaki",
+    "model": "W800",
+    "type": "Heritage",
+    "engine_cc": 773,
+    "price": 9999,
+    "description": "An authentic, old-school air-cooled classic roadster featuring a beautiful vertical-twin engine and vintage wire wheels."
+  },
+  {
+    "id": 80,
+    "name": "Kawasaki Versys 1000 SE LT+",
+    "brand": "Kawasaki",
+    "model": "Versys 1000 SE LT+",
+    "type": "Adventure",
+    "engine_cc": 1043,
+    "price": 18899,
+    "description": "A premium, street-oriented adventure tourer loaded with skyhook electronic suspension, hard bags, and cornering lights."
+  },
+  {
+    "id": 81,
+    "name": "Kawasaki Versys 650",
+    "brand": "Kawasaki",
+    "model": "Versys 650",
+    "type": "Adventure",
+    "engine_cc": 649,
+    "price": 8899,
+    "description": "An urban-oriented middleweight adventure tourer emphasizing comfortable long-distance ergonomics and touring capability."
+  },
+  {
+    "id": 82,
+    "name": "Kawasaki Versys-X 300",
+    "brand": "Kawasaki",
+    "model": "Versys-X 300",
+    "type": "Adventure",
+    "engine_cc": 296,
+    "price": 6199,
+    "description": "A lightweight, small-displacement adventure entry bike utilizing a high-revving twin engine optimized for rough backroads."
+  },
+  {
+    "id": 83,
+    "name": "Kawasaki KLR650",
+    "brand": "Kawasaki",
+    "model": "KLR650",
+    "type": "Dual Sport",
+    "engine_cc": 652,
+    "price": 6899,
+    "description": "The legendary, rugged, unstoppable overland tractor known globally for its extreme reliability, simplicity, and global capability."
+  },
+  {
+    "id": 84,
+    "name": "Kawasaki KLX300",
+    "brand": "Kawasaki",
+    "model": "KLX300",
+    "type": "Dual Sport",
+    "engine_cc": 292,
+    "price": 6199,
+    "description": "A modern liquid-cooled dual sport that offers a great balance of civil street manners and playful off-road trailing."
+  },
+  {
+    "id": 85,
+    "name": "Kawasaki KLX230",
+    "brand": "Kawasaki",
+    "model": "KLX230",
+    "type": "Dual Sport",
+    "engine_cc": 233,
+    "price": 4999,
+    "description": "A simple, compact, air-cooled entry dual sport motorcycle built for trail beginners and effortless light off-roading."
+  },
+  {
+    "id": 86,
+    "name": "Kawasaki KX450",
+    "brand": "Kawasaki",
+    "model": "KX450",
+    "type": "Motocross",
+    "engine_cc": 449,
+    "price": 10399,
+    "description": "Kawasaki's premium competition-grade closed-course motocross weapon built explicitly to dominate at elite supercross levels."
+  },
+  {
+    "id": 87,
+    "name": "Kawasaki KX250",
+    "brand": "Kawasaki",
+    "model": "KX250",
+    "type": "Motocross",
+    "engine_cc": 249,
+    "price": 8799,
+    "description": "A high-revving, track-focused quarter-liter dirt bike tailored for young aggressive racing competitors and track enthusiasts."
+  },
+  {
+    "id": 88,
+    "name": "Kawasaki Vulcan 1700 Voyager",
+    "brand": "Kawasaki",
+    "model": "Vulcan 1700 Voyager",
+    "type": "Cruiser",
+    "engine_cc": 1700,
+    "price": 19799,
+    "description": "A massive, fully-faired traditional luxury touring cruiser loaded with electronic cruise control and standard intercom gear."
+  },
+  {
+    "id": 89,
+    "name": "Kawasaki Vulcan 900 Custom",
+    "brand": "Kawasaki",
+    "model": "Vulcan 900 Custom",
+    "type": "Cruiser",
+    "engine_cc": 903,
+    "price": 9499,
+    "description": "A classic custom cruiser look featuring a fat rear tire, thin tall front wheel, and a dark custom bobber attitude."
+  },
+  {
+    "id": 90,
+    "name": "Kawasaki Vulcan S",
+    "brand": "Kawasaki",
+    "model": "Vulcan S",
+    "type": "Cruiser",
+    "engine_cc": 649,
+    "price": 7399,
+    "description": "A sportbike-derived cruiser featuring unique adjustable ergonomic fitments for riders of all shapes and heights."
+  },
+  {
+    "id": 91,
+    "name": "Suzuki GSX-1300R Hayabusa",
+    "brand": "Suzuki",
+    "model": "GSX-1300R Hayabusa",
+    "type": "Sport",
+    "engine_cc": 1340,
+    "price": 19099,
+    "description": "The legendary 'Busa, known for unmatched straight-line speed, massive aerodynamic bodywork, and a hyper-powerful 1,340cc inline-four engine."
+  },
+  {
+    "id": 92,
+    "name": "Suzuki GSX-R1000R",
+    "brand": "Suzuki",
+    "model": "GSX-R1000R",
+    "type": "Sport",
+    "engine_cc": 999,
+    "price": 18499,
+    "description": "The premium track-ready variant of Suzuki's flagship superbike, featuring Showa BFF suspension and advanced racing electronics."
+  },
+  {
+    "id": 93,
+    "name": "Suzuki GSX-R1000",
+    "brand": "Suzuki",
+    "model": "GSX-R1000",
+    "type": "Sport",
+    "engine_cc": 999,
+    "price": 16349,
+    "description": "A foundational liter-class superbike offering a perfect balance of raw inline-four power, sharp handling, and street-to-track versatility."
+  },
+  {
+    "id": 94,
+    "name": "Suzuki GSX-R750",
+    "brand": "Suzuki",
+    "model": "GSX-R750",
+    "type": "Sport",
+    "engine_cc": 750,
+    "price": 12999,
+    "description": "The ultimate sweet-spot sportbike, delivering the lightweight agility of a 600cc chassis with the punchy power of a larger engine."
+  },
+  {
+    "id": 95,
+    "name": "Suzuki GSX-R600",
+    "brand": "Suzuki",
+    "model": "GSX-R600",
+    "type": "Sport",
+    "engine_cc": 599,
+    "price": 11899,
+    "description": "A high-revving, purebred middleweight supersport designed for razor-sharp track cornering and high-RPM performance."
+  },
+  {
+    "id": 96,
+    "name": "Suzuki GSX-8R",
+    "brand": "Suzuki",
+    "model": "GSX-8R",
+    "type": "Sport",
+    "engine_cc": 776,
+    "price": 9439,
+    "description": "A modern middleweight sportbike powered by a punchy parallel-twin engine, built for accessible everyday street performance and aerodynamics."
+  },
+  {
+    "id": 97,
+    "name": "Suzuki GSX-S1000",
+    "brand": "Suzuki",
+    "model": "GSX-S1000",
+    "type": "Naked",
+    "engine_cc": 999,
+    "price": 11699,
+    "description": "An aggressive, stripped-down streetfighter utilizing a retuned, torque-heavy version of the legendary GSX-R1000 engine."
+  },
+  {
+    "id": 98,
+    "name": "Suzuki GSX-S1000GT+",
+    "brand": "Suzuki",
+    "model": "GSX-S1000GT+",
+    "type": "Sport Touring",
+    "engine_cc": 999,
+    "price": 14199,
+    "description": "A high-speed long-distance tourer equipped with integrated side cases, comfortable ergonomics, and intelligent cruise control."
+  },
+  {
+    "id": 99,
+    "name": "Suzuki GSX-S1000X",
+    "brand": "Suzuki",
+    "model": "GSX-S1000X",
+    "type": "Adventure crossover",
+    "engine_cc": 999,
+    "price": 13799,
+    "description": "An upright adventure-styled crossover that brings high-performance inline-four sportbike dynamics to longer-travel suspension."
+  },
+  {
+    "id": 100,
+    "name": "Suzuki GSX-8S",
+    "brand": "Suzuki",
+    "model": "GSX-8S",
+    "type": "Naked",
+    "engine_cc": 776,
+    "price": 8999,
+    "description": "A next-generation naked streetfighter featuring an all-new parallel-twin engine, sharp minimalist styling, and nimble urban handling."
+  },
+  {
+    "id": 101,
+    "name": "Suzuki GSX-S750",
+    "brand": "Suzuki",
+    "model": "GSX-S750",
+    "type": "Naked",
+    "engine_cc": 749,
+    "price": 8999,
+    "description": "A smooth and aggressive naked bike carrying a street-tuned version of the iconic GSX-R750 inline-four powerhouse."
+  },
+  {
+    "id": 102,
+    "name": "Suzuki SV650",
+    "brand": "Suzuki",
+    "model": "SV650",
+    "type": "Naked",
+    "engine_cc": 645,
+    "price": 7399,
+    "description": "The quintessential mid-sized naked bike, beloved for its incredibly reliable, characterful, and linear V-twin engine performance."
+  },
+  {
+    "id": 103,
+    "name": "Suzuki SV650X",
+    "brand": "Suzuki",
+    "model": "SV650X",
+    "type": "Cafe Racer",
+    "engine_cc": 645,
+    "price": 8399,
+    "description": "A stylized variant of the classic SV650, adding retro cafe racer flair with clip-on handlebars, a ribbed seat, and a front cowl."
+  },
+  {
+    "id": 104,
+    "name": "Suzuki Katana",
+    "brand": "Suzuki",
+    "model": "Katana",
+    "type": "Naked",
+    "engine_cc": 999,
+    "price": 13499,
+    "description": "A modern retro-tribute to the revolutionary 1981 original, combining striking origami-like design with modern liter-bike performance."
+  },
+  {
+    "id": 105,
+    "name": "Suzuki V-Strom 1050DE",
+    "brand": "Suzuki",
+    "model": "V-Strom 1050DE",
+    "type": "Adventure",
+    "engine_cc": 1037,
+    "price": 16199,
+    "description": "The hardcore, off-road optimized variant of Suzuki's large ADV, featuring a 21-inch front spoke wheel and aggressive gravel-ready traction modes."
+  },
+  {
+    "id": 106,
+    "name": "Suzuki V-Strom 1050",
+    "brand": "Suzuki",
+    "model": "V-Strom 1050",
+    "type": "Adventure",
+    "engine_cc": 1037,
+    "price": 14849,
+    "description": "A flagship long-distance adventure tourer built around a robust 90-degree V-twin, designed for comfortable road and light trail touring."
+  },
+  {
+    "id": 107,
+    "name": "Suzuki V-Strom 800DE",
+    "brand": "Suzuki",
+    "model": "V-Strom 800DE",
+    "type": "Adventure",
+    "engine_cc": 776,
+    "price": 11599,
+    "description": "A rugged middleweight adventure bike powered by Suzuki's modern parallel-twin, highly capable on dirt tracks with long-travel suspension."
+  },
+  {
+    "id": 108,
+    "name": "Suzuki V-Strom 800",
+    "brand": "Suzuki",
+    "model": "V-Strom 800",
+    "type": "Adventure",
+    "engine_cc": 776,
+    "price": 10249,
+    "description": "The road-focused version of the 800 platform, trading spoke wheels for lightweight cast alloys and shorter travel for sharp street manners."
+  },
+  {
+    "id": 109,
+    "name": "Suzuki V-Strom 650XT",
+    "brand": "Suzuki",
+    "model": "V-Strom 650XT",
+    "type": "Adventure",
+    "engine_cc": 645,
+    "price": 9399,
+    "description": "The spoked-wheel adventure edition of the mid-weight V-Strom, highly praised for its bulletproof reliability on multi-day journeys."
+  },
+  {
+    "id": 110,
+    "name": "Suzuki V-Strom 650",
+    "brand": "Suzuki",
+    "model": "V-Strom 650",
+    "type": "Adventure",
+    "engine_cc": 645,
+    "price": 8999,
+    "description": "A staple of the middleweight adventure class, offering dependable V-twin power, balanced ergonomics, and immense fuel range."
+  },
+  {
+    "id": 111,
+    "name": "Suzuki V-Strom 250SX",
+    "brand": "Suzuki",
+    "model": "V-Strom 250SX",
+    "type": "Adventure",
+    "engine_cc": 249,
+    "price": 5499,
+    "description": "A lightweight, single-cylinder sport-crossover adventure bike designed for nimble urban commuting and light weekend exploration."
+  },
+  {
+    "id": 112,
+    "name": "Suzuki Boulevard M109R B.O.S.S.",
+    "brand": "Suzuki",
+    "model": "Boulevard M109R B.O.S.S.",
+    "type": "Cruiser",
+    "engine_cc": 1783,
+    "price": 15599,
+    "description": "A massive performance cruiser boasting an aggressive dark aesthetic and one of the largest production V-twin pistons in the world."
+  },
+  {
+    "id": 113,
+    "name": "Suzuki Boulevard C50T",
+    "brand": "Suzuki",
+    "model": "Boulevard C50T",
+    "type": "Cruiser",
+    "engine_cc": 805,
+    "price": 10359,
+    "description": "A classic, vintage-style highway cruiser fully fitted with a tall windshield, studded leather saddlebags, and a passenger backrest."
+  },
+  {
+    "id": 114,
+    "name": "Suzuki Boulevard C50",
+    "brand": "Suzuki",
+    "model": "Boulevard C50",
+    "type": "Cruiser",
+    "engine_cc": 805,
+    "price": 8909,
+    "description": "An authentic, old-school cruiser featuring traditional valance fenders, spoked wheels, chrome detailing, and relaxed floorboards."
+  },
+  {
+    "id": 115,
+    "name": "Suzuki DR650S",
+    "brand": "Suzuki",
+    "model": "DR650S",
+    "type": "Dual Sport",
+    "engine_cc": 644,
+    "price": 6999,
+    "description": "A bulletproof, air-cooled, single-cylinder dual-sport tractor that has remained a favorite for round-the-world overland minimalism."
+  },
+  {
+    "id": 116,
+    "name": "Suzuki DR-Z400S",
+    "brand": "Suzuki",
+    "model": "DR-Z400S",
+    "type": "Dual Sport",
+    "engine_cc": 398,
+    "price": 7199,
+    "description": "A highly durable, liquid-cooled dual-sport bike offering excellent ground clearance and a time-tested mechanical layout for trail riding."
+  },
+  {
+    "id": 117,
+    "name": "Suzuki DR-Z400SM",
+    "brand": "Suzuki",
+    "model": "DR-Z400SM",
+    "type": "Supermoto",
+    "engine_cc": 398,
+    "price": 7899,
+    "description": "A factory supermoto version of the DR-Z, bringing dirt bike agility to paved roads with 17-inch sport tires and upgraded street brakes."
+  },
+  {
+    "id": 118,
+    "name": "Suzuki RM-Z450",
+    "brand": "Suzuki",
+    "model": "RM-Z450",
+    "type": "Motocross",
+    "engine_cc": 449,
+    "price": 9199,
+    "description": "A competition-grade motocross race bike known for its class-leading cornering performance and responsive, crisp power delivery."
+  },
+  {
+    "id": 119,
+    "name": "Suzuki RM-Z250",
+    "brand": "Suzuki",
+    "model": "RM-Z250",
+    "type": "Motocross",
+    "engine_cc": 249,
+    "price": 8099,
+    "description": "A nimble, high-revving 250cc track weapon crafted for amateur and professional motocross racers seeking precise handling."
+  },
+  {
+    "id": 120,
+    "name": "Suzuki Burgman 400",
+    "brand": "Suzuki",
+    "model": "Burgman 400",
+    "type": "Scooter",
+    "engine_cc": 400,
+    "price": 8699,
+    "description": "The elegant pioneer of the maxi-scooter category, blending luxurious rider comfort, massive under-seat storage, and highway-capable performance."
+  },
+  {
+    "id": 121,
+    "name": "Harley-Davidson Road Glide",
+    "brand": "Harley-Davidson",
+    "model": "Road Glide",
+    "type": "Touring",
+    "engine_cc": 1923,
+    "price": 25999,
+    "description": "A premier long-haul bagger iconic for its frame-mounted aerodynamic 'sharknose' fairing and high-torque Milwaukee-Eight 117 V-twin."
+  },
+  {
+    "id": 122,
+    "name": "Harley-Davidson Street Glide",
+    "brand": "Harley-Davidson",
+    "model": "Street Glide",
+    "type": "Touring",
+    "engine_cc": 1923,
+    "price": 25999,
+    "description": "The quintessential American hot-rod bagger, featuring the iconic fork-mounted 'batwing' fairing and modern rider electronics."
+  },
+  {
+    "id": 123,
+    "name": "Harley-Davidson Road Glide Limited",
+    "brand": "Harley-Davidson",
+    "model": "Road Glide Limited",
+    "type": "Touring",
+    "engine_cc": 1868,
+    "price": 32499,
+    "description": "The ultimate full-dress two-up touring machine, adding a plush passenger throne, Tour-Pak luggage carrier, and premium heated grips."
+  },
+  {
+    "id": 124,
+    "name": "Harley-Davidson Ultra Limited",
+    "brand": "Harley-Davidson",
+    "model": "Ultra Limited",
+    "type": "Touring",
+    "engine_cc": 1868,
+    "price": 32499,
+    "description": "A top-tier premium touring experience with classic batwing styling, unmatched wind protection, and expansive travel luggage capacity."
+  },
+  {
+    "id": 125,
+    "name": "Harley-Davidson Road King Special",
+    "brand": "Harley-Davidson",
+    "model": "Road King Special",
+    "type": "Touring",
+    "engine_cc": 1868,
+    "price": 24999,
+    "description": "A stripped-down, blacked-out custom touring bike that swaps fairings for a raw, commanding view of the highway."
+  },
+  {
+    "id": 126,
+    "name": "Harley-Davidson Fat Boy 114",
+    "brand": "Harley-Davidson",
+    "model": "Fat Boy 114",
+    "type": "Cruiser",
+    "engine_cc": 1868,
+    "price": 21999,
+    "description": "An iconic cruiser defined by its massive steamroller tires, solid aluminum Lakester wheels, and a bright, heavy-chrome presence."
+  },
+  {
+    "id": 127,
+    "name": "Harley-Davidson Heritage Classic 114",
+    "brand": "Harley-Davidson",
+    "model": "Heritage Classic 114",
+    "type": "Cruiser",
+    "engine_cc": 1868,
+    "price": 22499,
+    "description": "A beautiful throwback to vintage rock-and-roll styling, updated with a modern Softail chassis, detachable windscreen, and lockable bags."
+  },
+  {
+    "id": 128,
+    "name": "Harley-Davidson Breakout 117",
+    "brand": "Harley-Davidson",
+    "model": "Breakout 117",
+    "type": "Cruiser",
+    "engine_cc": 1923,
+    "price": 22499,
+    "description": "A long, low, and aggressive factory chopper profile dripping in chrome, sporting a massive 240mm rear tire for massive drag-strip styling."
+  },
+  {
+    "id": 129,
+    "name": "Harley-Davidson Low Rider S 117",
+    "brand": "Harley-Davidson",
+    "model": "Low Rider S 117",
+    "type": "Cruiser",
+    "engine_cc": 1923,
+    "price": 19999,
+    "description": "A performance-focused, West Coast-style cruiser combining standard mid-controls with the huge Milwaukee-Eight 117 engine."
+  },
+  {
+    "id": 130,
+    "name": "Harley-Davidson Low Rider ST 117",
+    "brand": "Harley-Davidson",
+    "model": "Low Rider ST 117",
+    "type": "Cruiser",
+    "engine_cc": 1923,
+    "price": 23399,
+    "description": "A high-performance sport-tourer blending an aggressive frame-mounted fairing and raised rear bags for tight cornering clearance."
+  },
+  {
+    "id": 131,
+    "name": "Harley-Davidson Softail Standard",
+    "brand": "Harley-Davidson",
+    "model": "Softail Standard",
+    "type": "Cruiser",
+    "engine_cc": 1746,
+    "price": 14999,
+    "description": "A lean, raw, and minimalist cruiser acting as the perfect blank canvas for custom builders and old-school purists."
+  },
+  {
+    "id": 132,
+    "name": "Harley-Davidson Street Bob 114",
+    "brand": "Harley-Davidson",
+    "model": "Street Bob 114",
+    "type": "Cruiser",
+    "engine_cc": 1868,
+    "price": 16999,
+    "description": "A gritty, lightweight, stripped-down bobber featuring mini-ape handlebars, blacked-out finishes, and digital instrument displays."
+  },
+  {
+    "id": 133,
+    "name": "Harley-Davidson Sportster S",
+    "brand": "Harley-Davidson",
+    "model": "Sportster S",
+    "type": "Sport",
+    "engine_cc": 1252,
+    "price": 16999,
+    "description": "A revolutionary high-performance sport-cruiser packing the liquid-cooled, high-RPM Revolution Max 1250T engine."
+  },
+  {
+    "id": 134,
+    "name": "Harley-Davidson Nightster Special",
+    "brand": "Harley-Davidson",
+    "model": "Nightster Special",
+    "type": "Sport",
+    "engine_cc": 975,
+    "price": 14999,
+    "description": "A modern liquid-cooled sport motorcycle with a classic silhouette, passenger pillion, and selectable ride modes for aggressive handling."
+  },
+  {
+    "id": 135,
+    "name": "Harley-Davidson Nightster",
+    "brand": "Harley-Davidson",
+    "model": "Nightster",
+    "type": "Sport",
+    "engine_cc": 975,
+    "price": 13499,
+    "description": "The modern entry point to Harley performance, driven by the liquid-cooled Revolution Max 975T V-twin engine."
+  },
+  {
+    "id": 136,
+    "name": "Harley-Davidson Pan America 1250 Special",
+    "brand": "Harley-Davidson",
+    "model": "Pan America 1250 Special",
+    "type": "Adventure",
+    "engine_cc": 1252,
+    "price": 19999,
+    "description": "Harley's premier adventure motorcycle, fully loaded with semi-active suspension and innovative Adaptive Ride Height technology."
+  },
+  {
+    "id": 137,
+    "name": "Harley-Davidson Pan America 1250",
+    "brand": "Harley-Davidson",
+    "model": "Pan America 1250",
+    "type": "Adventure",
+    "engine_cc": 1252,
+    "price": 17699,
+    "description": "A multi-tool touring machine designed to handle rugged dirt trails and high-speed tarmac exploring with a high-tech 150-horsepower engine."
+  },
+  {
+    "id": 138,
+    "name": "Harley-Davidson CVO Road Glide",
+    "brand": "Harley-Davidson",
+    "model": "CVO Road Glide",
+    "type": "Custom Touring",
+    "engine_cc": 1977,
+    "price": 44499,
+    "description": "Custom Vehicle Operations masterpiece showcasing exclusive high-end paint, ultra-premium audio tech, and the massive Milwaukee-Eight VVT 121 engine."
+  },
+  {
+    "id": 139,
+    "name": "Harley-Davidson CVO Street Glide",
+    "brand": "Harley-Davidson",
+    "model": "CVO Street Glide",
+    "type": "Custom Touring",
+    "engine_cc": 1977,
+    "price": 44499,
+    "description": "The ultimate expression of factory custom luxury, utilizing top-tier visual styling, variable valve timing, and bespoke luxury amenities."
+  },
+  {
+    "id": 140,
+    "name": "Harley-Davidson CVO Road Glide ST",
+    "brand": "Harley-Davidson",
+    "model": "CVO Road Glide ST",
+    "type": "Custom Touring",
+    "engine_cc": 1977,
+    "price": 42999,
+    "description": "The pinnacle of high-performance luxury baggers, utilizing carbon fiber parts, titanium exhausts, and track-tuned suspension."
+  },
+  {
+    "id": 141,
+    "name": "Harley-Davidson CVO Pan America",
+    "brand": "Harley-Davidson",
+    "model": "CVO Pan America",
+    "type": "Adventure",
+    "engine_cc": 1252,
+    "price": 28399,
+    "description": "A fully outfitted, limited-edition factory custom adventure motorcycle loaded with robust crash protection, luggage boxes, and lights."
+  },
+  {
+    "id": 142,
+    "name": "Harley-Davidson Freewheeler",
+    "brand": "Harley-Davidson",
+    "model": "Freewheeler",
+    "type": "Trike",
+    "engine_cc": 1868,
+    "price": 31999,
+    "description": "A stripped-down, aggressive three-wheel hot-rod trike featuring bobtail fenders and low-slung, confident handling."
+  },
+  {
+    "id": 143,
+    "name": "Harley-Davidson Tri Glide Ultra",
+    "brand": "Harley-Davidson",
+    "model": "Tri Glide Ultra",
+    "type": "Trike",
+    "engine_cc": 1868,
+    "price": 37999,
+    "description": "The ultimate ultimate long-distance three-wheel tourer, built for maximum comfort, entertainment tech, and luggage room."
+  },
+  {
+    "id": 144,
+    "name": "Harley-Davidson Road Glide 3",
+    "brand": "Harley-Davidson",
+    "model": "Road Glide 3",
+    "type": "Trike",
+    "engine_cc": 1868,
+    "price": 34999,
+    "description": "A performance-styled custom trike that marries the aerodynamic sharknose front fairing with stable three-wheel stability."
+  },
+  {
+    "id": 145,
+    "name": "Harley-Davidson Iron 883",
+    "brand": "Harley-Davidson",
+    "model": "Iron 883",
+    "type": "Cruiser",
+    "engine_cc": 883,
+    "price": 11249,
+    "description": "An iconic, raw, blacked-out entry-level cruiser from the Evolution engine era, known for its authentic, mechanical feel."
+  },
+  {
+    "id": 146,
+    "name": "Harley-Davidson Iron 1200",
+    "brand": "Harley-Davidson",
+    "model": "Iron 1200",
+    "type": "Cruiser",
+    "engine_cc": 1202,
+    "price": 12249,
+    "description": "A chopper-inspired Evolution-engined Sportster boasting retro 70s tank graphics, mini-apes, and an upgraded 1200cc torque spread."
+  },
+  {
+    "id": 147,
+    "name": "Harley-Davidson Forty-Eight",
+    "brand": "Harley-Davidson",
+    "model": "Forty-Eight",
+    "type": "Cruiser",
+    "engine_cc": 1202,
+    "price": 12299,
+    "description": "A fat-tired bulldog of a cruiser instantly recognized by its tiny, historic 'peanut' fuel tank and low-slung stance."
+  },
+  {
+    "id": 148,
+    "name": "Harley-Davidson Roadster",
+    "brand": "Harley-Davidson",
+    "model": "Roadster",
+    "type": "Cruiser",
+    "engine_cc": 1202,
+    "price": 11499,
+    "description": "A sport-tuned classic Sportster offering aggressive ergonomics, inverted front forks, and dual front disc brakes for cornering capability."
+  },
+  {
+    "id": 149,
+    "name": "Harley-Davidson Street 750",
+    "brand": "Harley-Davidson",
+    "model": "Street 750",
+    "type": "Cruiser",
+    "engine_cc": 749,
+    "price": 7599,
+    "description": "A liquid-cooled, lightweight urban cruiser designed for tight city streets and entry-level accessibility."
+  },
+  {
+    "id": 150,
+    "name": "Harley-Davidson Street Rod",
+    "brand": "Harley-Davidson",
+    "model": "Street Rod",
+    "type": "Cruiser",
+    "engine_cc": 749,
+    "price": 8699,
+    "description": "A muscular version of the Street platform, featuring a high-output engine, sharper lean angles, and a sporty riding posture."
+  },
+  {
+    "id": 151,
+    "name": "KTM 1390 Super Duke R Evo",
+    "brand": "KTM",
+    "model": "1390 Super Duke R Evo",
+    "type": "Naked",
+    "engine_cc": 1350,
+    "price": 21499,
+    "description": "The ultimate hyper-naked 'Beast,' combining a massive V-twin engine with semi-active electronically controlled WP suspension."
+  },
+  {
+    "id": 152,
+    "name": "KTM 1390 Super Duke R",
+    "brand": "KTM",
+    "model": "1390 Super Duke R",
+    "type": "Naked",
+    "engine_cc": 1350,
+    "price": 19499,
+    "description": "A brutal, uncompromising mechanical streetfighter utilizing a lightweight trellis frame and class-shattering V-twin torque."
+  },
+  {
+    "id": 153,
+    "name": "KTM 1290 Super Duke R",
+    "brand": "KTM",
+    "model": "1290 Super Duke R",
+    "type": "Naked",
+    "engine_cc": 1301,
+    "price": 18499,
+    "description": "The iconic predecessor to the 1390, globally feared for its raw acceleration, sharp handling, and high-tech rider aids."
+  },
+  {
+    "id": 154,
+    "name": "KTM 990 Duke",
+    "brand": "KTM",
+    "model": "990 Duke",
+    "type": "Naked",
+    "engine_cc": 947,
+    "price": 12499,
+    "description": "A razor-sharp middleweight naked bike, bridging the gap between hyper-bikes and city slicers with an extremely precise chassis."
+  },
+  {
+    "id": 155,
+    "name": "KTM 890 Duke GP",
+    "brand": "KTM",
+    "model": "890 Duke GP",
+    "type": "Naked",
+    "engine_cc": 889,
+    "price": 11899,
+    "description": "A derivation of the 'Super Scalpel' naked bike featuring a racing-inspired livery and aggressive, track-focused ergos."
+  },
+  {
+    "id": 156,
+    "name": "KTM 790 Duke",
+    "brand": "KTM",
+    "model": "790 Duke",
+    "type": "Naked",
+    "engine_cc": 799,
+    "price": 9499,
+    "description": "The original parallel-twin 'Scalpel,' highly celebrated for its punchy engine characteristic and agile cornering manners."
+  },
+  {
+    "id": 157,
+    "name": "KTM 390 Duke",
+    "brand": "KTM",
+    "model": "390 Duke",
+    "type": "Naked",
+    "engine_cc": 398,
+    "price": 6299,
+    "description": "The undisputed corner rocket for A2 license holders, combining low weight, premium tech, and single-cylinder punch."
+  },
+  {
+    "id": 158,
+    "name": "KTM 250 Duke",
+    "brand": "KTM",
+    "model": "250 Duke",
+    "type": "Naked",
+    "engine_cc": 249,
+    "price": 5399,
+    "description": "A premium entry middleweight naked bike offering sharp modern styling and smooth, user-friendly city power."
+  },
+  {
+    "id": 159,
+    "name": "KTM 200 Duke",
+    "brand": "KTM",
+    "model": "200 Duke",
+    "type": "Naked",
+    "engine_cc": 199,
+    "price": 4199,
+    "description": "An ultra-lightweight, high-RPM urban commuter bike featuring authentic race-bred DNA and sporty suspension."
+  },
+  {
+    "id": 160,
+    "name": "KTM 125 Duke",
+    "brand": "KTM",
+    "model": "125 Duke",
+    "type": "Naked",
+    "engine_cc": 125,
+    "price": 3899,
+    "description": "A high-spec premium entry naked bike giving beginners top-tier components like a TFT display and WP upside-down forks."
+  },
+  {
+    "id": 161,
+    "name": "KTM RC 8C",
+    "brand": "KTM",
+    "model": "RC 8C",
+    "type": "Track Only",
+    "engine_cc": 889,
+    "price": 39599,
+    "description": "A limited-edition, bespoke prototype track-only weapon built with Moto2-grade chassis hardware and full race bodywork."
+  },
+  {
+    "id": 162,
+    "name": "KTM RC 390",
+    "brand": "KTM",
+    "model": "RC 390",
+    "type": "Sport",
+    "engine_cc": 373,
+    "price": 5899,
+    "description": "A true small-displacement sportbike with adjustable suspension and electronics package derived directly from Grand Prix racing."
+  },
+  {
+    "id": 163,
+    "name": "KTM RC 200",
+    "brand": "KTM",
+    "model": "RC 200",
+    "type": "Sport",
+    "engine_cc": 199,
+    "price": 4499,
+    "description": "An eye-catching, aerodynamically optimized supersport commuter tailored for young riders looking for racetrack styling."
+  },
+  {
+    "id": 164,
+    "name": "KTM RC 125",
+    "brand": "KTM",
+    "model": "RC 125",
+    "type": "Sport",
+    "engine_cc": 125,
+    "price": 4199,
+    "description": "A race-inspired lightweight sportbike that teaches core cornering discipline through premium components and light weight."
+  },
+  {
+    "id": 165,
+    "name": "KTM 1290 Super Adventure R",
+    "brand": "KTM",
+    "model": "1290 Super Adventure R",
+    "type": "Adventure",
+    "engine_cc": 1301,
+    "price": 20299,
+    "description": "An absolute off-road behemoth designed to cross desert terrains at extreme speeds, utilizing heavy-duty off-road gear."
+  },
+  {
+    "id": 166,
+    "name": "KTM 1290 Super Adventure S",
+    "brand": "KTM",
+    "model": "1290 Super Adventure S",
+    "type": "Adventure",
+    "engine_cc": 1301,
+    "price": 20299,
+    "description": "A high-speed asphalt-shredding travel enduro machine packed with adaptive radar cruise control and electronic chassis aids."
+  },
+  {
+    "id": 167,
+    "name": "KTM 890 Adventure R",
+    "brand": "KTM",
+    "model": "890 Adventure R",
+    "type": "Adventure",
+    "engine_cc": 889,
+    "price": 15199,
+    "description": "A highly acclaimed rally-ready adventure machine capable of traversing genuine hard-enduro trails where standard ADVs cannot go."
+  },
+  {
+    "id": 168,
+    "name": "KTM 890 Adventure",
+    "brand": "KTM",
+    "model": "890 Adventure",
+    "type": "Adventure",
+    "engine_cc": 889,
+    "price": 13999,
+    "description": "A versatile road-and-trail long-distance tourer featuring low-slung saddle fuel tanks for an exceptionally low center of gravity."
+  },
+  {
+    "id": 169,
+    "name": "KTM 790 Adventure",
+    "brand": "KTM",
+    "model": "790 Adventure",
+    "type": "Adventure",
+    "engine_cc": 799,
+    "price": 10999,
+    "description": "The bike that redefined middleweight adventure touring, combining immense single-track competence with highway manners."
+  },
+  {
+    "id": 170,
+    "name": "KTM 390 Adventure",
+    "brand": "KTM",
+    "model": "390 Adventure",
+    "type": "Adventure",
+    "engine_cc": 373,
+    "price": 7399,
+    "description": "A highly accessible light adventure explorer outfitted with traction control and adjustable suspension for off-tarmac trips."
+  },
+  {
+    "id": 171,
+    "name": "KTM 690 Enduro R",
+    "brand": "KTM",
+    "model": "690 Enduro R",
+    "type": "Dual Sport",
+    "engine_cc": 693,
+    "price": 12999,
+    "description": "A hard-edged dual-sport weapon pairing a lightweight dirt-bike chassis with the world's most powerful production single-cylinder LC4 engine."
+  },
+  {
+    "id": 172,
+    "name": "KTM 690 SMC R",
+    "brand": "KTM",
+    "model": "690 SMC R",
+    "type": "Supermoto",
+    "engine_cc": 693,
+    "price": 12999,
+    "description": "A pure hooligan machine built for sliding sideways on paved asphalt with massive cornering limits and cornering ABS."
+  },
+  {
+    "id": 181,
+    "name": "Bajaj Auto Pulsar 125",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar 125",
+    "type": "Commuter",
+    "engine_cc": 124,
+    "price": 1050,
+    "description": "An entry-level sporty commuter offering premium Pulsar styling and fuel-efficient performance for city riding."
+  },
+  {
+    "id": 182,
+    "name": "Bajaj Auto Pulsar 150",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar 150",
+    "type": "Commuter",
+    "engine_cc": 149,
+    "price": 1350,
+    "description": "One of India's most iconic sporty commuters, known for its robust build, classic design, and reliable performance."
+  },
+  {
+    "id": 183,
+    "name": "Bajaj Auto Pulsar 180",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar 180",
+    "type": "Commuter",
+    "engine_cc": 178,
+    "price": 1550,
+    "description": "A legacy street fighter offering muscular aesthetics and a strong mid-range torque for daily enthusiasts."
+  },
+  {
+    "id": 184,
+    "name": "Bajaj Auto Pulsar 220F",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar 220F",
+    "type": "Commuter",
+    "engine_cc": 220,
+    "price": 1750,
+    "description": "A cult favorite performance bike featuring a semi-faired design, projector headlamps, and high-speed stability."
+  },
+  {
+    "id": 185,
+    "name": "Bajaj Auto Pulsar N125",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar N125",
+    "type": "Commuter",
+    "engine_cc": 124,
+    "price": 1150,
+    "description": "A modern, aggressively styled urban street bike designed to target younger buyers with advanced electronics."
+  },
+  {
+    "id": 186,
+    "name": "Bajaj Auto Pulsar N160",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar N160",
+    "type": "Naked",
+    "engine_cc": 164,
+    "price": 1550,
+    "description": "A next-generation naked street fighter boasting a highly refined engine and segment-first dual-channel ABS."
+  },
+  {
+    "id": 187,
+    "name": "Bajaj Auto Pulsar N250",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar N250",
+    "type": "Naked",
+    "engine_cc": 249,
+    "price": 1950,
+    "description": "The naked quarter-litre flagship Pulsar, combining muscular street presence with a smooth, torque-rich engine."
+  },
+  {
+    "id": 188,
+    "name": "Bajaj Auto Pulsar NS125",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar NS125",
+    "type": "Naked",
+    "engine_cc": 124,
+    "price": 1250,
+    "description": "An aggressive, perimeter-frame naked bike scaled down to an affordable and efficient 125cc displacement."
+  },
+  {
+    "id": 189,
+    "name": "Bajaj Auto Pulsar NS160",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar NS160",
+    "type": "Naked",
+    "engine_cc": 160,
+    "price": 1650,
+    "description": "A sharp street-naked machine inspired by larger sports bikes, featuring a perimeter frame and oil-cooled engine."
+  },
+  {
+    "id": 190,
+    "name": "Bajaj Auto Pulsar NS200",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar NS200",
+    "type": "Naked",
+    "engine_cc": 199,
+    "price": 1850,
+    "description": "A high-revving, liquid-cooled naked sports bike featuring raw acceleration and exceptional track-like handling."
+  },
+  {
+    "id": 191,
+    "name": "Bajaj Auto Pulsar NS400Z",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar NS400Z",
+    "type": "Naked",
+    "engine_cc": 373,
+    "price": 2350,
+    "description": "The ultimate flagship Pulsar street fighter, bringing massive power, electronics, and value to the 400cc segment."
+  },
+  {
+    "id": 192,
+    "name": "Bajaj Auto Pulsar RS200",
+    "brand": "Bajaj Auto",
+    "model": "Pulsar RS200",
+    "type": "Sport",
+    "engine_cc": 199,
+    "price": 2050,
+    "description": "The only fully faired race bike in the Pulsar lineup, equipped with dual projector lamps and track-tuned performance."
+  },
+  {
+    "id": 193,
+    "name": "Bajaj Auto Dominar 250",
+    "brand": "Bajaj Auto",
+    "model": "Dominar 250",
+    "type": "Touring",
+    "engine_cc": 248,
+    "price": 2250,
+    "description": "A purpose-built sports touring bike designed to make long-distance cruising comfortable and accessible."
+  },
+  {
+    "id": 194,
+    "name": "Bajaj Auto Dominar 400",
+    "brand": "Bajaj Auto",
+    "model": "Dominar 400",
+    "type": "Touring",
+    "engine_cc": 373,
+    "price": 2850,
+    "description": "A heavy-duty sports tourer packed with premium hardware, upside-down forks, and touring accessories as standard."
+  },
+  {
+    "id": 195,
+    "name": "Bajaj Auto Avenger Street 160",
+    "brand": "Bajaj Auto",
+    "model": "Avenger Street 160",
+    "type": "Cruiser",
+    "engine_cc": 160,
+    "price": 1450,
+    "description": "A low-slung, blacked-out urban cruiser built for effortless handling and comfortable daily city commutes."
+  },
+  {
+    "id": 196,
+    "name": "Bajaj Auto Avenger Street 220",
+    "brand": "Bajaj Auto",
+    "model": "Avenger Street 220",
+    "type": "Cruiser",
+    "engine_cc": 220,
+    "price": 1750,
+    "description": "An alloy-wheel cruiser bringing street-smart aesthetics mixed with relaxed ergonomic long-haul dynamics."
+  },
+  {
+    "id": 197,
+    "name": "Bajaj Auto Avenger Cruise 220",
+    "brand": "Bajaj Auto",
+    "model": "Avenger Cruise 220",
+    "type": "Cruiser",
+    "engine_cc": 220,
+    "price": 1750,
+    "description": "A classic highway cruiser featuring abundant chrome detailing, a tall windshield, and a comfortable backrest."
+  },
+  {
+    "id": 198,
+    "name": "Bajaj Auto Platina 100",
+    "brand": "Bajaj Auto",
+    "model": "Platina 100",
+    "type": "Commuter",
+    "engine_cc": 102,
+    "price": 850,
+    "description": "A highly affordable mileage-oriented commuter featuring Comfortec suspension for absorbing rough roads."
+  },
+  {
+    "id": 199,
+    "name": "Bajaj Auto Platina 110",
+    "brand": "Bajaj Auto",
+    "model": "Platina 110",
+    "type": "Commuter",
+    "engine_cc": 115,
+    "price": 950,
+    "description": "An upgraded commuter motorcycle offering highway capability and segment-first anti-lock braking (ABS)."
+  },
+  {
+    "id": 200,
+    "name": "Bajaj Auto CT 100",
+    "brand": "Bajaj Auto",
+    "model": "CT 100",
+    "type": "Commuter",
+    "engine_cc": 102,
+    "price": 750,
+    "description": "A bare-bones, highly rugged commuter engineered for maximum fuel efficiency and low maintenance costs."
+  },
+  {
+    "id": 201,
+    "name": "Bajaj Auto CT 110X",
+    "brand": "Bajaj Auto",
+    "model": "CT 110X",
+    "type": "Commuter",
+    "engine_cc": 115,
+    "price": 850,
+    "description": "A tough, utility-focused variant of the CT lineup with crash guards, a rear carrier, and rugged tires."
+  },
+  {
+    "id": 202,
+    "name": "Bajaj Auto CT 125X",
+    "brand": "Bajaj Auto",
+    "model": "CT 125X",
+    "type": "Commuter",
+    "engine_cc": 124,
+    "price": 950,
+    "description": "A heavy-duty utility commuter delivering optimal load carrying capability paired with a larger 125cc engine."
+  },
+  {
+    "id": 203,
+    "name": "Bajaj Auto Freedom 125",
+    "brand": "Bajaj Auto",
+    "model": "Freedom 125",
+    "type": "Commuter",
+    "engine_cc": 125,
+    "price": 1150,
+    "description": "The world's first mass-production CNG-powered motorcycle, designed to drastically reduce urban running costs."
+  },
+  {
+    "id": 204,
+    "name": "Bajaj Auto Chetak Premium",
+    "brand": "Bajaj Auto",
+    "model": "Chetak Premium",
+    "type": "Electric Scooter",
+    "engine_cc": 0,
+    "price": 1650,
+    "description": "A premium electric scooter boasting an all-metal body, elegant neo-retro styling, and smartphone connectivity."
+  },
+  {
+    "id": 205,
+    "name": "Bajaj Auto Chetak Urbane",
+    "brand": "Bajaj Auto",
+    "model": "Chetak Urbane",
+    "type": "Electric Scooter",
+    "engine_cc": 0,
+    "price": 1450,
+    "description": "A streamlined, everyday urban variant of the Chetak e-scooter prioritizing nimbleness and value."
+  },
+  {
+    "id": 206,
+    "name": "Bajaj Auto Discover 110",
+    "brand": "Bajaj Auto",
+    "model": "Discover 110",
+    "type": "Commuter",
+    "engine_cc": 115,
+    "price": 900,
+    "description": "A legacy commuter that combined premium execution, great suspension, and robust city efficiency."
+  },
+  {
+    "id": 207,
+    "name": "Bajaj Auto Discover 125",
+    "brand": "Bajaj Auto",
+    "model": "Discover 125",
+    "type": "Commuter",
+    "engine_cc": 124,
+    "price": 1050,
+    "description": "A reliable commuter bike featuring digital instrumentation, disc brakes, and a peppier mid-range engine."
+  },
+  {
+    "id": 208,
+    "name": "Bajaj Auto V15",
+    "brand": "Bajaj Auto",
+    "model": "V15",
+    "type": "Commuter",
+    "engine_cc": 149,
+    "price": 1150,
+    "description": "A unique commuter built using metal from India's historic aircraft carrier INS Vikrant, styled as a solid neo-classic."
+  },
+  {
+    "id": 209,
+    "name": "Bajaj Auto V12",
+    "brand": "Bajaj Auto",
+    "model": "V12",
+    "type": "Commuter",
+    "engine_cc": 124,
+    "price": 1050,
+    "description": "A smaller, highly efficient 125cc execution of the iconic V platform retaining its unique solid metal feel."
+  },
+  {
+    "id": 210,
+    "name": "Bajaj Auto Boxer 150",
+    "brand": "Bajaj Auto",
+    "model": "Boxer 150",
+    "type": "Commuter",
+    "engine_cc": 144,
+    "price": 1150,
+    "description": "A global utility workhorse manufactured for extreme durability, heavy loads, and rugged international markets."
+  },
+  {
+    "id": 211,
+    "name": "TVS Motor Apache RTR 160",
+    "brand": "TVS Motor",
+    "model": "Apache RTR 160",
+    "type": "Naked",
+    "engine_cc": 159,
+    "price": 1550,
+    "description": "A track-inspired naked street bike featuring a classic design language, sharp handling, and high-revving performance."
+  },
+  {
+    "id": 212,
+    "name": "TVS Motor Apache RTR 160 4V",
+    "brand": "TVS Motor",
+    "model": "Apache RTR 160 4V",
+    "type": "Naked",
+    "engine_cc": 159,
+    "price": 1650,
+    "description": "A class-leading 160cc streetfighter equipped with an advanced 4-valve engine and multiple urban riding modes."
+  },
+  {
+    "id": 213,
+    "name": "TVS Motor Apache RTR 180",
+    "brand": "TVS Motor",
+    "model": "Apache RTR 180",
+    "type": "Naked",
+    "engine_cc": 177,
+    "price": 1750,
+    "description": "A nimble track-derived street bike appreciated for its superb power-to-weight ratio and sharp racing ergonomics."
+  },
+  {
+    "id": 214,
+    "name": "TVS Motor Apache RTR 200 4V",
+    "brand": "TVS Motor",
+    "model": "Apache RTR 200 4V",
+    "type": "Naked",
+    "engine_cc": 197,
+    "price": 1950,
+    "description": "A highly advanced naked machine featuring race-tuned slipper clutch, adjustable suspension, and smart navigation."
+  },
+  {
+    "id": 215,
+    "name": "TVS Motor Apache RR 310",
+    "brand": "TVS Motor",
+    "model": "Apache RR 310",
+    "type": "Sport",
+    "engine_cc": 312,
+    "price": 3450,
+    "description": "TVS's flagship fully faired supersport motorcycle, co-developed with BMW, built for both track days and touring."
+  },
+  {
+    "id": 216,
+    "name": "TVS Motor Apache RTR 310",
+    "brand": "TVS Motor",
+    "model": "Apache RTR 310",
+    "type": "Naked",
+    "engine_cc": 312,
+    "price": 3150,
+    "description": "An aggressive, hyper-naked streetfighter loaded with cutting-edge tech like climate-controlled seats and cornering ABS."
+  },
+  {
+    "id": 217,
+    "name": "TVS Motor Raider 125",
+    "brand": "TVS Motor",
+    "model": "Raider 125",
+    "type": "Commuter",
+    "engine_cc": 124,
+    "price": 1250,
+    "description": "A highly successful, futuristic 125cc commuter featuring mono-shock suspension and a rich TFT display."
+  },
+  {
+    "id": 218,
+    "name": "TVS Motor Ronin 225",
+    "brand": "TVS Motor",
+    "model": "Ronin 225",
+    "type": "Cruiser",
+    "engine_cc": 225,
+    "price": 2050,
+    "description": "A modern-retro scrambler-cruiser crossover designed for unscripted, effortless journeys across town and trails."
+  },
+  {
+    "id": 219,
+    "name": "TVS Motor Star City Plus",
+    "brand": "TVS Motor",
+    "model": "Star City Plus",
+    "type": "Commuter",
+    "engine_cc": 109,
+    "price": 950,
+    "description": "A premium entry-level commuter motorcycle offering an eco-thrust engine for dependable daily mileage."
+  },
+  {
+    "id": 220,
+    "name": "TVS Motor Radeon",
+    "brand": "TVS Motor",
+    "model": "Radeon",
+    "type": "Commuter",
+    "engine_cc": 109,
+    "price": 850,
+    "description": "A sturdy, car-like retro styled commuter motorcycle built with a heavy-duty frame and high ground clearance."
+  },
+  {
+    "id": 221,
+    "name": "TVS Motor Sport",
+    "brand": "TVS Motor",
+    "model": "Sport",
+    "type": "Commuter",
+    "engine_cc": 109,
+    "price": 750,
+    "description": "An ultra-frugal entry commuter built purely to maximize economy and keep fleet maintenance simple."
+  },
+  {
+    "id": 222,
+    "name": "TVS Motor Jupiter 110",
+    "brand": "TVS Motor",
+    "model": "Jupiter 110",
+    "type": "Scooter",
+    "engine_cc": 109,
+    "price": 1050,
+    "description": "One of India's best-selling family gearless scooters, loved for its metal body and comfortable ride layout."
+  },
+  {
+    "id": 223,
+    "name": "TVS Motor Jupiter 125",
+    "brand": "TVS Motor",
+    "model": "Jupiter 125",
+    "type": "Scooter",
+    "engine_cc": 124,
+    "price": 1150,
+    "description": "An innovative 125cc scooter featuring a floorboard fuel-filler cap and class-leading massive under-seat storage."
+  },
+  {
+    "id": 224,
+    "name": "TVS Motor Ntorq 125",
+    "brand": "TVS Motor",
+    "model": "Ntorq 125",
+    "type": "Scooter",
+    "engine_cc": 124,
+    "price": 1150,
+    "description": "A sporty, youth-focused automatic scooter delivering snappy acceleration and a throaty exhaust note."
+  },
+  {
+    "id": 225,
+    "name": "TVS Motor Ntorq 125 Race XP",
+    "brand": "TVS Motor",
+    "model": "Ntorq 125 Race XP",
+    "type": "Scooter",
+    "engine_cc": 124,
+    "price": 1350,
+    "description": "The highest performance variant of the Ntorq, pushing additional power and switchable dual ride modes."
+  },
+  {
+    "id": 226,
+    "name": "TVS Motor Ntorq 125 XT",
+    "brand": "TVS Motor",
+    "model": "Ntorq 125 XT",
+    "type": "Scooter",
+    "engine_cc": 124,
+    "price": 1450,
+    "description": "A high-tech version of the Ntorq featuring a dual-screen console, voice assistance, and social alerts."
+  },
+  {
+    "id": 227,
+    "name": "TVS Motor Zest 110",
+    "brand": "TVS Motor",
+    "model": "Zest 110",
+    "type": "Scooter",
+    "engine_cc": 109,
+    "price": 950,
+    "description": "A lightweight, zippy scooter targeted towards female riders looking for compact, agile urban transport."
+  },
+  {
+    "id": 228,
+    "name": "TVS Motor Scooty Pep Plus",
+    "brand": "TVS Motor",
+    "model": "Scooty Pep Plus",
+    "type": "Scooter",
+    "engine_cc": 87,
+    "price": 850,
+    "description": "A highly recognizable, legendary lightweight scooter built for absolute beginners and easy tight-traffic filtering."
+  },
+  {
+    "id": 229,
+    "name": "TVS Motor iQube Standard",
+    "brand": "TVS Motor",
+    "model": "iQube Standard",
+    "type": "Electric Scooter",
+    "engine_cc": 0,
+    "price": 1550,
+    "description": "A highly practical, quiet, and balanced family electric scooter mimicking conventional ICE scooter ergonomics."
+  },
+  {
+    "id": 230,
+    "name": "TVS Motor iQube S",
+    "brand": "TVS Motor",
+    "model": "iQube S",
+    "type": "Electric Scooter",
+    "engine_cc": 0,
+    "price": 1750,
+    "description": "An upgraded electric scooter variant boasting enhanced user-interface options and customizable themes."
+  },
+  {
+    "id": 231,
+    "name": "TVS Motor iQube ST",
+    "brand": "TVS Motor",
+    "model": "iQube ST",
+    "type": "Electric Scooter",
+    "engine_cc": 0,
+    "price": 2050,
+    "description": "The flagship long-range iQube scooter variant with a significantly larger battery pack and faster charging."
+  },
+  {
+    "id": 232,
+    "name": "TVS Motor X",
+    "brand": "TVS Motor",
+    "model": "X",
+    "type": "Electric Scooter",
+    "engine_cc": 0,
+    "price": 3150,
+    "description": "A high-performance crossover maxi-electric scooter engineered with a rigid twin-spar frame and insane acceleration."
+  },
+  {
+    "id": 233,
+    "name": "TVS Motor XL100 Heavy Duty",
+    "brand": "TVS Motor",
+    "model": "XL100 Heavy Duty",
+    "type": "Moped",
+    "engine_cc": 99,
+    "price": 650,
+    "description": "An indestructible, heavy-load carrying utility moped widely used by small businesses across rural and urban markets."
+  },
+  {
+    "id": 234,
+    "name": "TVS Motor XL100 Comfort",
+    "brand": "TVS Motor",
+    "model": "XL100 Comfort",
+    "type": "Moped",
+    "engine_cc": 99,
+    "price": 750,
+    "description": "A dual-seat version of the popular moped prioritizing comfortable passenger commutes over raw cargo space."
+  },
+  {
+    "id": 235,
+    "name": "TVS Motor Victor 110",
+    "brand": "TVS Motor",
+    "model": "Victor 110",
+    "type": "Commuter",
+    "engine_cc": 109,
+    "price": 850,
+    "description": "A legacy premium commuter that prioritized silent engine performance and heavily cushioned seating."
+  },
+  {
+    "id": 236,
+    "name": "TVS Motor Wego 110",
+    "brand": "TVS Motor",
+    "model": "Wego 110",
+    "type": "Scooter",
+    "engine_cc": 109,
+    "price": 950,
+    "description": "A dynamic family scooter notable for its low-vibration body balance tech and sturdy full-metal bodywork."
+  },
+  {
+    "id": 237,
+    "name": "TVS Motor Centra",
+    "brand": "TVS Motor",
+    "model": "Centra",
+    "type": "Commuter",
+    "engine_cc": 99,
+    "price": 750,
+    "description": "An older-generation commuter model celebrated for pioneering massive real-world fuel economy gains."
+  },
+  {
+    "id": 238,
+    "name": "TVS Motor Fiero 150",
+    "brand": "TVS Motor",
+    "model": "Fiero 150",
+    "type": "Commuter",
+    "engine_cc": 147,
+    "price": 1050,
+    "description": "A legendary early performance commuter motorcycle that paved the way for the future development of the Apache line."
+  },
+  {
+    "id": 239,
+    "name": "TVS Motor Apache RTX 300",
+    "brand": "TVS Motor",
+    "model": "Apache RTX 300",
+    "type": "Adventure",
+    "engine_cc": 312,
+    "price": 3250,
+    "description": "A conceptualized adventure tourer sharing the advanced liquid-cooled 310 platform for dual-purpose versatility."
+  },
+  {
+    "id": 240,
+    "name": "TVS Motor Ntorq 150",
+    "brand": "TVS Motor",
+    "model": "Ntorq 150",
+    "type": "Scooter",
+    "engine_cc": 150,
+    "price": 1550,
+    "description": "An upscale, experimental maxi-scooter layout maximizing performance touring capabilities in an automatic format."
+  },
+  {
+    "id": 241,
+    "name": "Royal Enfield Classic 350",
+    "brand": "Royal Enfield",
+    "model": "Classic 350",
+    "type": "Heritage",
+    "engine_cc": 349,
+    "price": 4799,
+    "description": "The quintessential timeless retro cruiser featuring a smooth J-series engine and unmistakable vintage thumping exhaust."
+  },
+  {
+    "id": 242,
+    "name": "Royal Enfield Classic 500",
+    "brand": "Royal Enfield",
+    "model": "Classic 500",
+    "type": "Heritage",
+    "engine_cc": 499,
+    "price": 5599,
+    "description": "The iconic, high-torque legacy model representing heavy pushrod charm before the introduction of twin-cylinders."
+  },
+  {
+    "id": 243,
+    "name": "Royal Enfield Classic 650",
+    "brand": "Royal Enfield",
+    "model": "Classic 650",
+    "type": "Heritage",
+    "engine_cc": 648,
+    "price": 6899,
+    "description": "A majestic classic roadster scaling up the timeless retro aesthetic with a powerful twin-cylinder engine."
+  },
+  {
+    "id": 244,
+    "name": "Royal Enfield Goan Classic 350",
+    "brand": "Royal Enfield",
+    "model": "Goan Classic 350",
+    "type": "Heritage",
+    "engine_cc": 349,
+    "price": 4899,
+    "description": "A relaxed bobber variant of the Classic 350 featuring whitewall tires, ape hangers, and a low seat height."
+  },
+  {
+    "id": 245,
+    "name": "Royal Enfield Bullet 350",
+    "brand": "Royal Enfield",
+    "model": "Bullet 350",
+    "type": "Heritage",
+    "engine_cc": 349,
+    "price": 4599,
+    "description": "The longest continuous running motorcycle model in history, sporting hand-painted pinstripes and military legacy."
+  },
+  {
+    "id": 246,
+    "name": "Royal Enfield Bullet 500",
+    "brand": "Royal Enfield",
+    "model": "Bullet 500",
+    "type": "Heritage",
+    "engine_cc": 499,
+    "price": 5499,
+    "description": "A heavy-duty incarnation of the Bullet line packing raw torque and simple, old-school mechanism prestige."
+  },
+  {
+    "id": 247,
+    "name": "Royal Enfield Bullet Trials 350",
+    "brand": "Royal Enfield",
+    "model": "Bullet Trials 350",
+    "type": "Scrambler",
+    "engine_cc": 346,
+    "price": 4999,
+    "description": "A niche tribute variant with raised exhaust, custom single rack, and off-road tires honors mid-century trials events."
+  },
+  {
+    "id": 248,
+    "name": "Royal Enfield Bullet Trials 500",
+    "brand": "Royal Enfield",
+    "model": "Bullet Trials 500",
+    "type": "Scrambler",
+    "engine_cc": 499,
+    "price": 5899,
+    "description": "A heavy-displacement trials build incorporating vintage competition aesthetics on a rugged frame setup."
+  },
+  {
+    "id": 249,
+    "name": "Royal Enfield Meteor 350",
+    "brand": "Royal Enfield",
+    "model": "Meteor 350",
+    "type": "Cruiser",
+    "engine_cc": 349,
+    "price": 4699,
+    "description": "An easy-riding, low-slung highway cruiser fitted with a counterbalanced smooth powerplant and standard navigation."
+  },
+  {
+    "id": 250,
+    "name": "Royal Enfield Super Meteor 650",
+    "brand": "Royal Enfield",
+    "model": "Super Meteor 650",
+    "type": "Cruiser",
+    "engine_cc": 648,
+    "price": 7199,
+    "description": "A premium cruising machine built with a solid steel chassis, USD forks, and an ultra-relaxed highway posture."
+  },
+  {
+    "id": 251,
+    "name": "Royal Enfield Hunter 350",
+    "brand": "Royal Enfield",
+    "model": "Hunter 350",
+    "type": "Roadster",
+    "engine_cc": 349,
+    "price": 3999,
+    "description": "A compact, lightweight, and modern urban roadster tuned for quick handling through dense city environments."
+  },
+  {
+    "id": 252,
+    "name": "Royal Enfield Himalayan 411",
+    "brand": "Royal Enfield",
+    "model": "Himalayan 411",
+    "type": "Adventure",
+    "engine_cc": 411,
+    "price": 5499,
+    "description": "The primitive, unpretentious lifestyle ADV bike that conquered rugged terrains with simple long-travel suspension."
+  },
+  {
+    "id": 253,
+    "name": "Royal Enfield Himalayan 450",
+    "brand": "Royal Enfield",
+    "model": "Himalayan 450",
+    "type": "Adventure",
+    "engine_cc": 452,
+    "price": 6199,
+    "description": "A modern liquid-cooled, ride-by-wire powerhouse built to handle extreme dual-sport touring across high altitudes."
+  },
+  {
+    "id": 254,
+    "name": "Royal Enfield Scram 411",
+    "brand": "Royal Enfield",
+    "model": "Scram 411",
+    "type": "Adventure Crossover",
+    "engine_cc": 411,
+    "price": 5099,
+    "description": "An urban scrambler version of the original Himalayan, emphasizing multi-purpose agility and vibrant colors."
+  },
+  {
+    "id": 255,
+    "name": "Royal Enfield Scram 440",
+    "brand": "Royal Enfield",
+    "model": "Scram 440",
+    "type": "Adventure Crossover",
+    "engine_cc": 440,
+    "price": 5499,
+    "description": "An evolved, torquier scrambler built on an enhanced air-oil cooled single engine for dynamic road manners."
+  },
+  {
+    "id": 256,
+    "name": "Royal Enfield Interceptor 650",
+    "brand": "Royal Enfield",
+    "model": "Interceptor 650",
+    "type": "Roadster",
+    "engine_cc": 648,
+    "price": 6149,
+    "description": "A highly acclaimed authentic 1960s style twin-cylinder roadster delivering incredible performance and charm."
+  },
+  {
+    "id": 257,
+    "name": "Royal Enfield Continental GT 650",
+    "brand": "Royal Enfield",
+    "model": "Continental GT 650",
+    "type": "Cafe Racer",
+    "engine_cc": 648,
+    "price": 6349,
+    "description": "A sharp retro cafe racer with clip-on handlebars, rear-set footpegs, and an aggressive road-carving profile."
+  },
+  {
+    "id": 258,
+    "name": "Royal Enfield Continental GT 535",
+    "brand": "Royal Enfield",
+    "model": "Continental GT 535",
+    "type": "Cafe Racer",
+    "engine_cc": 535,
+    "price": 5999,
+    "description": "The classic single-cylinder cafe racer built on a lightweight Harris Performance frame layout."
+  },
+  {
+    "id": 259,
+    "name": "Royal Enfield Shotgun 650",
+    "brand": "Royal Enfield",
+    "model": "Shotgun 650",
+    "type": "Custom Roadster",
+    "engine_cc": 648,
+    "price": 6899,
+    "description": "A modular custom-inspired machine that effortlessly transitions from a single-seater bobber to a dual-seat roadster."
+  },
+  {
+    "id": 260,
+    "name": "Royal Enfield Guerrilla 450",
+    "brand": "Royal Enfield",
+    "model": "Guerrilla 450",
+    "type": "Roadster",
+    "engine_cc": 452,
+    "price": 5899,
+    "description": "An aggressive, fast naked roadster utilizing the modern liquid-cooled engine for high-energy urban riding."
+  },
+  {
+    "id": 261,
+    "name": "Royal Enfield Bear 650",
+    "brand": "Royal Enfield",
+    "model": "Bear 650",
+    "type": "Scrambler",
+    "engine_cc": 648,
+    "price": 6899,
+    "description": "A rugged 650cc twin scrambler honoring historical desert racing feats with scrambler ergonomics and heavy tires."
+  },
+  {
+    "id": 262,
+    "name": "Royal Enfield Thunderbird 350",
+    "brand": "Royal Enfield",
+    "model": "Thunderbird 350",
+    "type": "Cruiser",
+    "engine_cc": 346,
+    "price": 4599,
+    "description": "A classic highway tourer featuring a massive teardrop fuel tank and premium projector headlamps."
+  },
+  {
+    "id": 263,
+    "name": "Royal Enfield Thunderbird 500",
+    "brand": "Royal Enfield",
+    "model": "Thunderbird 500",
+    "type": "Cruiser",
+    "engine_cc": 499,
+    "price": 5499,
+    "description": "The heavy-displacement variant of the Thunderbird family, equipped with electronic fuel injection."
+  },
+  {
+    "id": 264,
+    "name": "Royal Enfield Thunderbird 350X",
+    "brand": "Royal Enfield",
+    "model": "Thunderbird 350X",
+    "type": "Cruiser",
+    "engine_cc": 346,
+    "price": 4799,
+    "description": "A youthful factory-custom cruiser variant with flat handlebars, bright colors, and tubeless alloy rims."
+  },
+  {
+    "id": 265,
+    "name": "Royal Enfield Thunderbird 500X",
+    "brand": "Royal Enfield",
+    "model": "Thunderbird 500X",
+    "type": "Cruiser",
+    "engine_cc": 499,
+    "price": 5699,
+    "description": "An urban cruising machine blending dark theme accents with a powerful half-litre single engine output."
+  },
+  {
+    "id": 266,
+    "name": "Royal Enfield Rumbler 350",
+    "brand": "Royal Enfield",
+    "model": "Rumbler 350",
+    "type": "Cruiser",
+    "engine_cc": 346,
+    "price": 4599,
+    "description": "The international branding export version of the comfortable long-range Thunderbird tourer series."
+  },
+  {
+    "id": 267,
+    "name": "Royal Enfield Rumbler 500",
+    "brand": "Royal Enfield",
+    "model": "Rumbler 500",
+    "type": "Cruiser",
+    "engine_cc": 499,
+    "price": 5499,
+    "description": "An exported cruiser package optimizing high torque for global highway and urban touring conditions."
+  },
+  {
+    "id": 268,
+    "name": "Royal Enfield Taurus",
+    "brand": "Royal Enfield",
+    "model": "Taurus",
+    "type": "Diesel Cruiser",
+    "engine_cc": 325,
+    "price": 4999,
+    "description": "A rare historical collector's diesel-powered mass production bike legendary for unmatched structural fuel mileage."
+  },
+  {
+    "id": 269,
+    "name": "Royal Enfield Flying Flea C6",
+    "brand": "Royal Enfield",
+    "model": "Flying Flea C6",
+    "type": "Electric",
+    "engine_cc": 0,
+    "price": 6000,
+    "description": "An avant-garde electric motorcycle inspired by lightweight WWII military heritage bikes tailored for clean urban spaces."
+  },
+  {
+    "id": 270,
+    "name": "Royal Enfield Machismo 500",
+    "brand": "Royal Enfield",
+    "model": "Machismo 500",
+    "type": "Heritage",
+    "engine_cc": 499,
+    "price": 5899,
+    "description": "A highly premium chrome-clad limited edition single engine masterpiece originating from historical tooling lines."
+  }
+]

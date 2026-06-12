@@ -1,9 +1,8 @@
-// client/src/components/FeaturedProducts.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axiosInstance from '../api/axiosInstance';
 import ProductCard from './ProductCard';
-import ScrollReveal from './ScrollReveal';
+import { motion } from 'framer-motion';
 
 export default function FeaturedProducts() {
   const [products, setProducts] = useState([]);
@@ -25,42 +24,46 @@ export default function FeaturedProducts() {
   }, []);
 
   return (
-    <section id="featured" className="py-20 bg-dark-bg">
+    <section id="lineup" className="py-24 bg-[#0D0D0D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollReveal className="mb-16">
-          <span className="text-accent-primary font-semibold text-sm tracking-widest uppercase">
-            <span className="mr-2">04</span>
-            <span className="inline-block w-2 h-2 bg-accent-primary rounded-full align-middle" />
-          </span>
-          <h2 className="text-5xl md:text-6xl font-bold mt-4 font-display">
-            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-primary to-accent-secondary">Motorcycles</span>
+        
+        <div className="mb-16 border-b border-[#FF3C00] inline-block pb-2">
+          <h2 className="text-4xl md:text-5xl font-display font-bold uppercase tracking-widest text-[#F2F2F2]">
+            CURRENT LINEUP
           </h2>
-        </ScrollReveal>
+        </div>
 
         {loading ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="bg-dark-card animate-pulse h-96 rounded-lg" />
+              <div key={i} className="bg-[#1A1A1A] animate-pulse h-96 border border-[#2A2A2B]" />
             ))}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {products.map((product, index) => (
-              <ScrollReveal key={product._id} delay={index * 0.06} className="h-full">
+              <motion.div
+                key={product._id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                className="h-full"
+              >
                 <ProductCard motorcycle={product} />
-              </ScrollReveal>
+              </motion.div>
             ))}
           </div>
         )}
 
-        <ScrollReveal className="text-center mt-16">
+        <div className="text-center mt-20">
           <Link
             to="/shop"
-            className="inline-block px-8 py-4 border border-dark-border hover:border-accent-primary rounded-lg font-semibold transition-colors hover:text-accent-primary"
+            className="inline-flex items-center justify-center px-10 py-4 border border-[#2A2A2B] text-[#F2F2F2] font-display font-bold uppercase tracking-widest text-sm hover:border-[#FF3C00] transition-colors"
           >
-            View All Models <span className="ml-2">→</span>
+            Explore All Models
           </Link>
-        </ScrollReveal>
+        </div>
       </div>
     </section>
   );

@@ -13,7 +13,8 @@ router.get('/', async (req, res) => {
     if (category) {
       filter.category = category;
     } else if (excludeCategory) {
-      filter.category = { $ne: excludeCategory };
+      const excludedArray = excludeCategory.split(',');
+      filter.category = { $nin: excludedArray };
     }
     if (featured === 'true') filter.featured = true;
     if (brand) filter.brand = brand;

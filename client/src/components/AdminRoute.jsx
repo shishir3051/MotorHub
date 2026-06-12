@@ -10,7 +10,8 @@ export default function AdminRoute({ children }) {
     return <Navigate to="/login" replace />;
   }
 
-  if (sessionContext === 'admin' && !user) {
+  // Wait for useSessionSync to switch context and load user
+  if (sessionContext !== 'admin' || !user) {
     return (
       <div className="min-h-screen bg-dark-bg flex items-center justify-center text-dark-muted">
         Loading admin session...
@@ -18,7 +19,7 @@ export default function AdminRoute({ children }) {
     );
   }
 
-  if (user?.role !== 'admin') {
+  if (user.role !== 'admin') {
     return <Navigate to="/login" replace />;
   }
 

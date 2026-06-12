@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import axiosInstance from '../../api/axiosInstance';
 import { formatCategory } from '../../constants/categories';
-import { FiEdit2, FiTrash2, FiPlus, FiImage, FiChevronLeft, FiChevronRight, FiSearch, FiPackage } from 'react-icons/fi';
+import { FiEdit2, FiTrash2, FiPlus, FiImage, FiChevronLeft, FiChevronRight, FiPackage, FiSearch } from 'react-icons/fi';
 
-export default function AdminBikes() {
-  const [bikes, setBikes] = useState([]);
+export default function AdminParts() {
+  const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [deleting, setDeleting] = useState(null);
   
-  // Pagination & Search state
   const [page, setPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
   const [appliedSearch, setAppliedSearch] = useState('');
@@ -18,11 +17,12 @@ export default function AdminBikes() {
   const [totalProducts, setTotalProducts] = useState(0);
   const limit = 10;
 
-  const fetchBikes = async (currentPage, searchStr = '') => {
+  const fetchItems = async (currentPage, searchStr = '') => {
     setLoading(true);
     try {
-      const res = await axiosInstance.get(`/motorcycles?excludeCategory=gear,accessories&page=${currentPage}&limit=${limit}&search=${encodeURIComponent(searchStr)}`);
-      setBikes(res.data.motorcycles);
+      // Filter exclusively by category=accessories
+      const res = await axiosInstance.get(`/motorcycles?category=accessories&page=${currentPage}&limit=${limit}&search=${encodeURIComponent(searchStr)}`);
+      setItems(res.data.motorcycles);
       if (res.data.pagination) {
         setTotalPages(res.data.pagination.pages);
         setTotalProducts(res.data.pagination.total);
@@ -35,7 +35,7 @@ export default function AdminBikes() {
   };
 
   useEffect(() => {
-    fetchBikes(page, appliedSearch);
+    fetchItems(page, appliedSearch);
   }, [page, appliedSearch]);
 
   const handleSearchSubmit = (e) => {
@@ -45,13 +45,12 @@ export default function AdminBikes() {
   };
 
   const handleDelete = async (id) => {
-    if (!window.confirm('Delete this motorcycle?')) return;
+    if (!window.confirm('Delete this item?')) return;
     setDeleting(id);
     try {
       await axiosInstance.delete(`/motorcycles/${id}`);
-      setBikes((prev) => prev.filter((b) => b._id !== id));
-      // Re-fetch to ensure pagination stays correct
-      fetchBikes(page, appliedSearch);
+      setItems((prev) => prev.filter((b) => b._id !== id));
+      fetchItems(page, appliedSearch);
     } catch (err) {
       alert(err.response?.data?.error || 'Delete failed');
     } finally {
@@ -59,14 +58,8 @@ export default function AdminBikes() {
     }
   };
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { staggerChildren: 0.1 } }
-  };
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    show: { opacity: 1, y: 0 }
-  };
+  const containerVariants = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.1 } } };
+  const itemVariants = { hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0 } };
 
   return (
     <motion.div variants={containerVariants} initial="hidden" animate="show" className="space-y-6">
@@ -76,15 +69,12 @@ export default function AdminBikes() {
             <Link to="/admin" className="p-2 bg-dark-bg border border-dark-border rounded-lg hover:border-accent-primary hover:text-accent-primary transition-all text-dark-muted" title="Back to Dashboard">
               <FiChevronLeft size={20} />
             </Link>
-            <h1 className="text-3xl font-black tracking-tight">Manage Inventory</h1>
+            <h1 className="text-3xl font-black tracking-tight">Parts & Accessories</h1>
           </div>
-          <p className="text-dark-muted mt-1">View, edit, and manage all motorcycles in your store.</p>
+          <p className="text-dark-muted mt-1">View, edit, and manage all parts and accessories inventory.</p>
         </div>
-        <Link
-          to="/admin/bikes/new"
-          className="flex items-center gap-2 px-6 py-3 bg-accent-primary text-dark-bg font-bold rounded-xl hover:bg-accent-secondary transition-all shadow-lg shadow-accent-primary/20 hover:shadow-accent-primary/40 shrink-0"
-        >
-          <FiPlus /> Add Motorcycle
+        <Link to="/admin/parts/new" className="flex items-center gap-2 px-6 py-3 bg-accent-primary text-dark-bg font-bold rounded-xl hover:bg-accent-secondary transition-all shadow-lg shrink-0">
+          <FiPlus /> Add Item
         </Link>
       </motion.div>
 
@@ -95,7 +85,7 @@ export default function AdminBikes() {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="Search motorcycles by name..."
+            placeholder="Search parts & accessories by name..."
             className="w-full bg-transparent border-none py-3 !pl-12 pr-4 text-dark-text focus:outline-none focus:ring-0 placeholder:text-dark-muted"
           />
           <button
@@ -107,7 +97,7 @@ export default function AdminBikes() {
         </form>
       </motion.div>
 
-      {loading && bikes.length === 0 ? (
+      {loading && items.length === 0 ? (
         <motion.div variants={itemVariants} className="animate-pulse h-[600px] bg-dark-card border border-dark-border rounded-3xl" />
       ) : (
         <motion.div variants={itemVariants} className="bg-dark-card border border-dark-border rounded-3xl overflow-hidden shadow-sm flex flex-col">
@@ -116,7 +106,7 @@ export default function AdminBikes() {
               <thead className="bg-dark-bg/50 border-b border-dark-border">
                 <tr>
                   <th className="p-5 font-bold text-dark-muted uppercase tracking-wider text-xs">Image</th>
-                  <th className="p-5 font-bold text-dark-muted uppercase tracking-wider text-xs">Motorcycle Name</th>
+                  <th className="p-5 font-bold text-dark-muted uppercase tracking-wider text-xs">Product Name</th>
                   <th className="p-5 font-bold text-dark-muted uppercase tracking-wider text-xs">Category</th>
                   <th className="p-5 font-bold text-dark-muted uppercase tracking-wider text-xs">Price</th>
                   <th className="p-5 font-bold text-dark-muted uppercase tracking-wider text-xs">Stock</th>
@@ -124,56 +114,41 @@ export default function AdminBikes() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-dark-border">
-                {bikes.map((bike) => (
-                  <tr key={bike._id} className="hover:bg-dark-bg/30 transition-colors group">
+                {items.map((item) => (
+                  <tr key={item._id} className="hover:bg-dark-bg/30 transition-colors group">
                     <td className="p-5">
-                      {bike.images?.[0] ? (
-                        <div className="w-16 h-12 rounded-xl overflow-hidden shadow-sm border border-dark-border group-hover:border-accent-primary/30 transition-colors">
-                          <img src={bike.images[0].url} alt={bike.name} className="w-full h-full object-cover" />
+                      {item.images?.[0] ? (
+                        <div className="w-12 h-12 rounded-xl overflow-hidden shadow-sm border border-dark-border group-hover:border-accent-primary/30 transition-colors">
+                          <img src={item.images[0].url} alt={item.name} className="w-full h-full object-cover" />
                         </div>
                       ) : (
-                        <div className="w-16 h-12 rounded-xl bg-dark-bg flex items-center justify-center border border-dark-border text-dark-muted">
+                        <div className="w-12 h-12 rounded-xl bg-dark-bg flex items-center justify-center border border-dark-border text-dark-muted">
                           <FiImage size={20} />
                         </div>
                       )}
                     </td>
-                    <td className="p-5 font-bold text-base">{bike.name}</td>
-                    <td className="p-5">
-                      <span className="px-3 py-1 bg-accent-primary/10 text-accent-primary rounded-full font-bold text-xs">
-                        {formatCategory(bike.category)}
-                      </span>
-                    </td>
-                    <td className="p-5 font-medium">${bike.price.toLocaleString()}</td>
-                    <td className="p-5">
-                      <span className={`px-3 py-1 rounded-full font-bold text-xs ${bike.stock > 0 ? 'bg-green-500/10 text-green-500' : 'bg-red-500/10 text-red-500'}`}>
-                        {bike.stock} in stock
-                      </span>
-                    </td>
+                    <td className="p-5 font-bold text-base">{item.name}</td>
+                    <td className="p-5"><span className="px-3 py-1 bg-accent-primary/10 text-accent-primary rounded-full font-bold text-xs">{formatCategory(item.category)}</span></td>
+                    <td className="p-5 font-medium">${item.price.toLocaleString()}</td>
+                    <td className="p-5"><span className={`px-3 py-1 rounded-full font-bold text-xs ${item.stock > 0 ? 'bg-green-500/10 text-green-500' : 'bg-red-500/10 text-red-500'}`}>{item.stock} in stock</span></td>
                     <td className="p-5">
                       <div className="flex justify-end gap-2">
-                        <Link
-                          to={`/admin/bikes/${bike._id}/edit`}
-                          className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center text-dark-muted hover:text-accent-primary hover:bg-accent-primary/10 transition-all"
-                        >
+                        <Link to={`/admin/parts/${item._id}/edit`} className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center text-dark-muted hover:text-accent-primary hover:bg-accent-primary/10 transition-all">
                           <FiEdit2 size={18} />
                         </Link>
-                        <button
-                          onClick={() => handleDelete(bike._id)}
-                          disabled={deleting === bike._id}
-                          className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center text-dark-muted hover:text-red-400 hover:bg-red-500/10 transition-all disabled:opacity-50"
-                        >
+                        <button onClick={() => handleDelete(item._id)} disabled={deleting === item._id} className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center text-dark-muted hover:text-red-400 hover:bg-red-500/10 transition-all disabled:opacity-50">
                           <FiTrash2 size={18} />
                         </button>
                       </div>
                     </td>
                   </tr>
                 ))}
-                {bikes.length === 0 && (
+                {items.length === 0 && (
                   <tr>
                     <td colSpan="6" className="p-10 text-center text-dark-muted">
                       <div className="flex flex-col items-center justify-center gap-3">
                         <FiPackage size={40} className="opacity-20" />
-                        <p>No motorcycles found. Add one to get started.</p>
+                        <p>No parts found. Add one to get started.</p>
                       </div>
                     </td>
                   </tr>
@@ -182,27 +157,14 @@ export default function AdminBikes() {
             </table>
           </div>
 
-          {/* Pagination Controls */}
           {totalPages > 1 && (
             <div className="p-5 border-t border-dark-border bg-dark-bg/30 flex items-center justify-between">
               <span className="text-sm text-dark-muted font-bold uppercase tracking-wider">
                 Page {page} of {totalPages} <span className="ml-2 text-accent-primary opacity-80">({totalProducts} Products Total)</span>
               </span>
               <div className="flex gap-2">
-                <button
-                  onClick={() => setPage((p) => Math.max(1, p - 1))}
-                  disabled={page === 1 || loading}
-                  className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center border border-dark-border text-dark-text hover:border-accent-primary hover:text-accent-primary transition-all disabled:opacity-50 disabled:hover:border-dark-border disabled:hover:text-dark-text"
-                >
-                  <FiChevronLeft size={20} />
-                </button>
-                <button
-                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-                  disabled={page === totalPages || loading}
-                  className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center border border-dark-border text-dark-text hover:border-accent-primary hover:text-accent-primary transition-all disabled:opacity-50 disabled:hover:border-dark-border disabled:hover:text-dark-text"
-                >
-                  <FiChevronRight size={20} />
-                </button>
+                <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1 || loading} className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center border border-dark-border text-dark-text hover:border-accent-primary hover:text-accent-primary transition-all disabled:opacity-50"><FiChevronLeft size={20} /></button>
+                <button onClick={() => setPage(p => Math.min(totalPages, p + 1))} disabled={page === totalPages || loading} className="w-10 h-10 rounded-xl bg-dark-bg flex items-center justify-center border border-dark-border text-dark-text hover:border-accent-primary hover:text-accent-primary transition-all disabled:opacity-50"><FiChevronRight size={20} /></button>
               </div>
             </div>
           )}

@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, Outlet, useNavigate, useLocation } from 'react-router-dom';
-import { FiGrid, FiPackage, FiPlus, FiLogOut, FiMenu, FiX, FiChevronRight, FiShield, FiHome, FiUsers } from 'react-icons/fi';
+import { FiGrid, FiPackage, FiPlus, FiLogOut, FiMenu, FiX, FiChevronRight, FiShield, FiHome, FiUsers, FiSettings, FiCalendar, FiMapPin, FiLayers } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useStore } from '../../store/useStore';
 
 const navItems = [
   { to: '/admin', label: 'Dashboard', icon: FiGrid, end: true },
-  { to: '/admin/bikes', label: 'Inventory', icon: FiPackage },
-  { to: '/admin/bikes/new', label: 'Add Motorcycle', icon: FiPlus },
+  { to: '/admin/bikes', label: 'Motorcycles', icon: FiPackage },
+  { to: '/admin/gear', label: 'Gear & Apparel', icon: FiLayers },
+  { to: '/admin/parts', label: 'Parts & Acc', icon: FiSettings },
+  { to: '/admin/appointments', label: 'Appointments', icon: FiCalendar },
+  { to: '/admin/dealers', label: 'Dealers', icon: FiMapPin },
   { to: '/admin/subscribers', label: 'Subscribers', icon: FiUsers },
 ];
 

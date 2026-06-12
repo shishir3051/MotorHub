@@ -13,6 +13,8 @@ import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Accessories from './pages/Accessories';
+import About from './pages/About';
+import Dealers from './pages/Dealers';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
@@ -21,6 +23,12 @@ import VerifyEmail from './pages/VerifyEmail';
 import Dashboard from './pages/Dashboard';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import AdminBikes from './pages/admin/AdminBikes';
+import AdminGear from './pages/admin/AdminGear';
+import AdminParts from './pages/admin/AdminParts';
+import AdminOrders from './pages/admin/AdminOrders';
+import AdminUsers from './pages/admin/AdminUsers';
+import AdminAppointments from './pages/admin/AdminAppointments';
+import AdminDealers from './pages/admin/AdminDealers';
 import AdminBikeForm from './pages/admin/AdminBikeForm';
 import AdminSubscribers from './pages/admin/AdminSubscribers';
 import Contact from './pages/support/Contact';
@@ -63,6 +71,8 @@ function AppContent() {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Products />} />
           <Route path="/accessories" element={<Accessories />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/dealers" element={<Dealers />} />
           <Route path="/motorcycle/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
@@ -89,8 +99,18 @@ function AppContent() {
           >
             <Route index element={<AdminDashboard />} />
             <Route path="bikes" element={<AdminBikes />} />
+            <Route path="gear" element={<AdminGear />} />
+            <Route path="parts" element={<AdminParts />} />
+            <Route path="orders" element={<AdminOrders />} />
+            <Route path="users" element={<AdminUsers />} />
+            <Route path="appointments" element={<AdminAppointments />} />
+            <Route path="dealers" element={<AdminDealers />} />
             <Route path="bikes/new" element={<AdminBikeForm />} />
             <Route path="bikes/:id/edit" element={<AdminBikeForm />} />
+            <Route path="gear/new" element={<AdminBikeForm />} />
+            <Route path="gear/:id/edit" element={<AdminBikeForm />} />
+            <Route path="parts/new" element={<AdminBikeForm />} />
+            <Route path="parts/:id/edit" element={<AdminBikeForm />} />
             <Route path="subscribers" element={<AdminSubscribers />} />
           </Route>
         </Routes>

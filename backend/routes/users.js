@@ -7,6 +7,16 @@ import sendEmail from '../utils/sendEmail.js';
 
 const router = express.Router();
 
+// Get all users (Admin)
+router.get('/', async (req, res) => {
+  try {
+    const users = await User.find().select('-password').sort({ createdAt: -1 });
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Register
 router.post('/register', async (req, res) => {
   try {
