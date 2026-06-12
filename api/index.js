@@ -9,6 +9,9 @@ import orderRoutes from '../backend/routes/orders.js';
 import authRoutes from '../backend/routes/auth.js';
 import subscribersRouter from '../backend/routes/subscribers.js';
 import contactRoutes from '../backend/routes/contact.js';
+import appointmentRoutes from '../backend/routes/appointments.js';
+import dealerRoutes from '../backend/routes/dealers.js';
+import uploadRoutes from '../backend/routes/upload.js';
 
 const app = express();
 
@@ -57,6 +60,9 @@ app.use('/api/orders', orderRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/subscribers', subscribersRouter);
 app.use('/api/contact', contactRoutes);
+app.use('/api/appointments', appointmentRoutes);
+app.use('/api/dealers', dealerRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // Export for Vercel
 export default app;

@@ -5,23 +5,7 @@ import fs from 'fs';
 
 const router = express.Router();
 
-// Ensure uploads directory exists
-const uploadDir = path.join(process.cwd(), 'uploads');
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
-}
-
-const storage = multer.diskStorage({
-  destination(req, file, cb) {
-    cb(null, 'uploads/');
-  },
-  filename(req, file, cb) {
-    cb(
-      null,
-      `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`
-    );
-  },
-});
+const storage = multer.memoryStorage();
 
 function checkFileType(file, cb) {
   const filetypes = /jpg|jpeg|png|webp|svg/;
@@ -46,9 +30,14 @@ router.post('/', upload.single('image'), (req, res) => {
   if (!req.file) {
     return res.status(400).send({ error: 'No image uploaded' });
   }
+  
+  // Convert buffer to Base64 data URI
+  const b64 = Buffer.from(req.file.buffer).toString('base64');
+  const dataURI = `data:${req.file.mimetype};base64,${b64}`;
+
   res.send({
     message: 'Image Uploaded',
-    imageUrl: `/uploads/${req.file.filename}`,
+    imageUrl: dataURI,
   });
 });
 
