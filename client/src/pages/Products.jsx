@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import axiosInstance from '../api/axiosInstance';
 import ProductCard from '../components/ProductCard';
 import { CATEGORIES, formatCategory } from '../constants/categories';
-import { FiFilter, FiX, FiSearch } from 'react-icons/fi';
+import { FiFilter, FiX, FiSearch, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 export default function Products() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -293,20 +293,62 @@ export default function Products() {
                 </div>
 
                 {pagination.pages > 1 && (
-                  <div className="flex justify-center gap-3 mt-16 pb-12">
-                    {Array.from({ length: pagination.pages }, (_, i) => i + 1).map((p) => (
-                      <button
-                        key={p}
-                        onClick={() => { setPage(p); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                        className={`w-12 h-12 font-display font-bold uppercase tracking-widest text-sm transition-all duration-300 flex items-center justify-center border
-                          ${page === p
-                            ? 'bg-[#FF3C00] text-white border-[#FF3C00]'
-                            : 'bg-transparent border-[#2A2A2B] text-[#888888] hover:border-[#FF3C00] hover:text-[#F2F2F2]'
-                          }`}
-                      >
-                        {p}
-                      </button>
-                    ))}
+                  <div className="flex flex-wrap justify-center items-center gap-2 mt-16 pb-12">
+                    {/* Previous Button */}
+                    <button
+                      onClick={() => { setPage(Math.max(1, page - 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                      disabled={page === 1}
+                      className={`w-12 h-12 flex items-center justify-center border transition-all duration-300
+                        ${page === 1
+                          ? 'bg-transparent border-[#2A2A2B] text-[#4A4A4A] cursor-not-allowed'
+                          : 'bg-transparent border-[#2A2A2B] text-[#888888] hover:border-[#FF3C00] hover:text-[#F2F2F2]'
+                        }`}
+                    >
+                      <FiChevronLeft size={20} />
+                    </button>
+
+                    {/* Page Numbers */}
+                    {Array.from({ length: pagination.pages }, (_, i) => i + 1)
+                      .filter(p => p === 1 || p === pagination.pages || Math.abs(p - page) <= 1)
+                      .reduce((acc, p, i, arr) => {
+                        if (i > 0 && p - arr[i - 1] > 1) {
+                          acc.push('...');
+                        }
+                        acc.push(p);
+                        return acc;
+                      }, [])
+                      .map((p, idx) => (
+                        p === '...' ? (
+                          <span key={`ellipsis-${idx}`} className="w-12 h-12 flex items-center justify-center text-[#888888] font-display font-bold">
+                            ...
+                          </span>
+                        ) : (
+                          <button
+                            key={p}
+                            onClick={() => { setPage(p); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                            className={`w-12 h-12 font-display font-bold uppercase tracking-widest text-sm transition-all duration-300 flex items-center justify-center border
+                              ${page === p
+                                ? 'bg-[#FF3C00] text-white border-[#FF3C00]'
+                                : 'bg-transparent border-[#2A2A2B] text-[#888888] hover:border-[#FF3C00] hover:text-[#F2F2F2]'
+                              }`}
+                          >
+                            {p}
+                          </button>
+                        )
+                      ))}
+
+                    {/* Next Button */}
+                    <button
+                      onClick={() => { setPage(Math.min(pagination.pages, page + 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                      disabled={page === pagination.pages}
+                      className={`w-12 h-12 flex items-center justify-center border transition-all duration-300
+                        ${page === pagination.pages
+                          ? 'bg-transparent border-[#2A2A2B] text-[#4A4A4A] cursor-not-allowed'
+                          : 'bg-transparent border-[#2A2A2B] text-[#888888] hover:border-[#FF3C00] hover:text-[#F2F2F2]'
+                        }`}
+                    >
+                      <FiChevronRight size={20} />
+                    </button>
                   </div>
                 )}
               </>

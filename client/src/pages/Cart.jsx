@@ -131,21 +131,21 @@ export default function Cart() {
             <div className="space-y-4 mb-6 pb-6 border-b border-dark-border">
               <div className="flex justify-between text-dark-muted">
                 <span>Subtotal</span>
-                <span>${subtotal.toLocaleString()}</span>
+                <span>${subtotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
               </div>
               <div className="flex justify-between text-dark-muted">
                 <span>Tax (10%)</span>
-                <span>${tax.toLocaleString()}</span>
+                <span>${tax.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
               </div>
               <div className="flex justify-between text-dark-muted">
                 <span>Shipping</span>
-                <span>{shipping === 0 ? 'Free' : `$${shipping}`}</span>
+                <span>{shipping === 0 ? 'Free' : `$${shipping.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}</span>
               </div>
             </div>
 
             <div className="flex justify-between text-2xl font-bold mb-6">
               <span>Total</span>
-              <span className="text-accent-primary">${total.toLocaleString()}</span>
+              <span className="text-accent-primary">${total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
             </div>
 
             <Link

@@ -49,7 +49,7 @@ export default function AuthModal({ isOpen, onClose, redirect = '' }) {
             className="fixed inset-0 z-[1001] flex items-center justify-center p-4 pointer-events-none"
           >
             <div
-              className="pointer-events-auto relative w-full max-w-md bg-dark-card border border-dark-border rounded-2xl shadow-glass overflow-hidden"
+              className="pointer-events-auto relative w-[calc(100%-2rem)] sm:w-full max-w-md bg-dark-card border border-dark-border rounded-2xl shadow-glass overflow-hidden mx-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Top accent bar */}

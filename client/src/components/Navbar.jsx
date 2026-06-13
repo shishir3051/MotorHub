@@ -191,7 +191,7 @@ export default function Navbar() {
               </Link>
 
               {/* User Menu */}
-              <div ref={userMenuRef} className="relative hidden md:block">
+              <div ref={userMenuRef} className="relative block">
                 <button
                   onClick={() => setUserMenuOpen((o) => !o)}
                   className={`flex items-center gap-2 p-2 transition-colors ${userMenuOpen ? 'text-[#FF3C00]' : 'text-[#888888] hover:text-[#FF3C00]'}`}
